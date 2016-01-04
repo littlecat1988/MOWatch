@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+    defaultConfig {
+        applicationId "com.mtk.btnotification"
+        minSdkVersion 17
+        targetSdkVersion 18
+        multiDexEnabled = true
+    }
+    lintOptions {
+        abortOnError true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'joda-time:joda-time:2.3'
+    compile project(':library_SlidingMenu')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile files('src/main/jniLibs/wearable.jar')
+    compile files('src/main/jniLibs/AchartEngine.jar')
+    compile files('src/main/jniLibs/AMap_3DMap_V2.4.0.jar')
+    compile files('src/main/jniLibs/AMap_Services_V2.3.1.jar')
+    compile files('src/main/jniLibs/Android_Location_V1.3.2.jar')
+    compile files('src/main/jniLibs/commons-codec-1.5.jar')
+    compile files('src/main/jniLibs/crashhandle.jar')
+    compile files('src/main/jniLibs/FotaVdmLib.jar')
+    compile files('src/main/jniLibs/google-play-services.jar')
+    compile files('src/main/jniLibs/httpclient-4.0.jar')
+    compile files('src/main/jniLibs/httpcore-4.0.1.jar')
+    compile files('src/main/jniLibs/jg_filter_sdk_1.1.jar')
+    compile files('src/main/jniLibs/mframework.jar')
+    compile files('src/main/jniLibs/mid-sdk-2.20.jar')
+    compile files('src/main/jniLibs/mina-core-2.0.7.jar')
+    compile files('src/main/jniLibs/MREPermission.jar')
+    compile files('src/main/jniLibs/nineoldandroids-library-2.4.0.jar')
+    compile files('src/main/jniLibs/ormlite-android-4.48.jar')
+    compile files('src/main/jniLibs/ormlite-core-4.48.jar')
+    compile files('src/main/jniLibs/signpost-commonshttp4-1.2.1.1.jar')
+    compile files('src/main/jniLibs/signpost-core-1.2.1.1.jar')
+    compile files('src/main/jniLibs/slf4j-api-1.7.7.jar')
+    compile files('src/main/jniLibs/slf4j-jdk14-1.7.7.jar')
+    compile files('src/main/jniLibs/smssdk.jar')
+    compile files('src/main/jniLibs/SMSSDK-1.1.7.jar')
+    compile files('src/main/jniLibs/universal-image-loader-1.8.6-with-sources.jar')
+    compile files('src/main/jniLibs/Xg_sdk_v2.39_20150915_1121.jar')
+    compile files('src/main/jniLibs/wup-1.0.0-SNAPSHOT.jar')
+    compile files('src/main/jniLibs/domob_android_sdk.jar')
+}

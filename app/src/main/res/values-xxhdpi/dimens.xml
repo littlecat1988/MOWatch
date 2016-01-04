@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="gps_map_height">300.0dip</dimen>
+    <dimen name="main_gps_height">110.0dip</dimen>
+    <dimen name="main_ur_height">122.0dp</dimen>
+    <dimen name="main_sport_height">140.0dip</dimen>
+    <dimen name="main_binding_height">80.0dip</dimen>
+    <dimen name="main_sleep_height">120.0dip</dimen>
+    <dimen name="main_diet_height">80.0dip</dimen>
+    <dimen name="title_height">60.0dip</dimen>
+    <dimen name="text_size_dialog_portrait_title">25.0sp</dimen>
+    <dimen name="text_size_dialog_portrait_item">20.0sp</dimen>
+    <dimen name="sleep_text">15.0sp</dimen>
+    <dimen name="history_size">20.0sp</dimen>
+    <dimen name="size_clock">60.0sp</dimen>
+    <dimen name="icon_text_size">17.0sp</dimen>
+    <dimen name="sport_circle_size">240.0dp</dimen>
+<dimen name="step_size">60sp</dimen>
+<dimen name="title_total_size">15sp</dimen>
+<dimen name="text_chart_size">12sp</dimen>
+<dimen name="chart_margin_left">10dp</dimen>
+<dimen name="chart_margin_right">10dp</dimen>
+<dimen name="chart_margin_top">30dp</dimen>
+<dimen name="chart_margin_bottom">15dp</dimen>
+<dimen name="chart_sleep_height">350dp</dimen>
+<dimen name="chart_sleep_label_size">12sp</dimen>
+
+<dimen name="person_info_customer_title">25sp</dimen>
+<dimen name="person_info_text_size">20sp</dimen>
+<dimen name="person_info_button_height">125dp</dimen>
+<dimen name="person_info_button_margin_bottom">25dp</dimen>
+<dimen name="person_info_pop_window_text_size">20sp</dimen>
+    <dimen name="historychart_margin_top">10dp</dimen>
+    <dimen name="historychartchart_margin_left">10dp</dimen>
+    <dimen name="historychartchart_margin_right">10dp</dimen>
+    <dimen name="historychartchart_margin_bottom">10dp</dimen>
+    <dimen name="sleep_size">40sp</dimen>
+    <dimen name="title_date_size">20sp</dimen>
+</resources>

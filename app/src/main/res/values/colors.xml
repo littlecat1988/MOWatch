@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textcolor">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue">#ff0080ff</color>
+    <color name="light_blue">#ff03a9f4</color>
+    <color name="background_light_blue">#4fc3f7</color>
+    <color name="black">#ff000000</color>
+    <color name="customed_yellow">#ffffff93</color>
+    <color name="customed_second">#fff5f5f5</color>
+
+    <drawable name="color_blue">#1bc9fc</drawable>
+    <drawable name="color_orange">#ffa300</drawable>
+    <drawable name="color_white">#ffffff</drawable>
+    <color name="color_black">#000000</color>
+    <color name="color_blue">#1bc9fc</color>
+    <color name="color_orange">#ffa300</color>
+    <color name="color_gray">#cccccc</color>
+    <color name="color_white">#ffffff</color>
+    <!-- 我的信息 -->
+    <color name="my_info_bg">#f2f2f2</color>
+    <color name="nan_bg">#1bc9fc</color>
+    <color name="nv_bg">#ff7676</color>
+
+    <!-- 自定义对话框 -->
+    <color name="dialog_text_color">#1fbfbf</color>
+    <color name="dialog_button_bg1">#00000000</color>
+    <color name="dialog_button_bg2">#999d9c</color>
+    <color name="dialog_view">#dedede</color>
+    <color name="dialog_edit_bg">#00000000</color>
+
+    <!-- public_head -->
+    <color name="public_head_bg">#3adda2</color>
+    <color name="public_text">#ffffff</color>
+
+    <!-- locus -->
+    <color name="locus_bg">#f8f8f8</color>
+    <color name="locus_date_bg">#f6f5ec</color>
+    <color name="head_text">#ffffffff</color>
+    <!-- 亲情号码 -->
+    <color name="qinqing_text1_color">#a5a5a5</color>
+    <color name="qinqing_text2_color">#5a5a5a</color>
+    <color name="qinqing_text3_color">#F9A872</color>
+
+    <!-- 意见反馈 -->
+    <color name="feedback_bg">#f2f2f2</color>
+    <color name="feedback_text1_color">#a5a5a5</color>
+    <color name="feedback_text2_color">#5a5a5a</color>
+    <color name="feedback_text3_color">#ff0000</color>
+
+    <color name="text1_color">#a5a5a5</color>
+    <color name="text2_color">#5a5a5a</color>
+    <color name="message_text1_color">#444444</color>
+    <color name="message_text2_color">#b3b3b3</color>
+    <color name="register_edit_bg">#00000000</color>
+
+
+    <color name="tab_selected_bg">#4a9ad3</color>
+    <color name="tab_selected2_bg">#ffffff</color>
+    <color name="bg_color">#ffd8eefe</color>
+    <color name="info_blue_divider">#ff2fc3ef</color>
+
+    <!-- 微聊 -->
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+</resources>

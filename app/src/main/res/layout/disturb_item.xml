@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disturb">
+
+        <TextView
+            android:id="@+id/time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            tools:text="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/time_id"
+            android:background="@color/color_gray">
+
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/disturb">
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="07:00"
+            android:textSize="16sp"
+            tools:text="07:00" />
+
+        <TextView
+            android:id="@+id/time12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/time1"
+            android:text="-"
+            android:textSize="16sp"
+            tools:text="-" />
+
+        <TextView
+            android:id="@+id/time13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/time12"
+            android:text="07:00"
+            android:textSize="16sp"
+            tools:text="07:00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/time_1">
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="07:00"
+            android:textSize="16sp"
+            tools:text="07:00" />
+
+        <TextView
+            android:id="@+id/time22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/time2"
+            android:text="-"
+            android:textSize="16sp"
+            tools:text="-" />
+
+        <TextView
+            android:id="@+id/time23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/time22"
+            android:text="07:00"
+            android:textSize="16sp"
+            tools:text="07:00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/time_2">
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="07:00"
+            android:textSize="16sp"
+            tools:text="07:00" />
+
+        <TextView
+            android:id="@+id/time32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/time3"
+            android:text="-"
+            android:textSize="16sp"
+            tools:text="-" />
+
+        <TextView
+            android:id="@+id/time33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/time32"
+            android:text="07:00"
+            android:textSize="16sp"
+            tools:text="07:00" />
+    </RelativeLayout>
+</RelativeLayout>

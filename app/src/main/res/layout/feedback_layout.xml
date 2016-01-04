@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/feedback_bg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_public" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="* "
+                android:textColor="@color/feedback_text3_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_text1"
+                android:textColor="@color/feedback_text2_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/feed_back_connect"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/feedback_edit_bg"
+            android:gravity="top"
+            android:hint="@string/feedback_hint1"
+            android:maxLines="6"
+            android:padding="5dip"
+            android:textColor="@color/feedback_text2_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="12dip"
+            android:text="@string/feedback_text2"
+            android:textColor="@color/feedback_text1_color"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/feed_back_button"
+            style="@style/style_button"
+            android:layout_marginTop="60dip"
+            android:text="@string/feedback_button_text" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        layout="@layout/progress_bar"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="crashhandle">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/main/jniLibs/crashhandle.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

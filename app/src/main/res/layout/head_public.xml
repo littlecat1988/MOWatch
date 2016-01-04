@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contain_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fc9d19" >
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:padding="20dp"
+        android:visibility="invisible"
+        android:src="@drawable/button_back" />
+
+    <TextView
+        android:id="@+id/title_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="宝贝信息"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/right_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="19dp"
+        android:text="保存"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/fence_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/button_fence_add_xml"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/fenceEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/button_fence_edit"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/fenceAddConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/bind_button"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/to_locus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/button_common_padding"
+        android:src="@drawable/head_right1"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/button_common_padding"
+        android:text="@string/next"
+        android:textColor="@drawable/text_color3"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/device_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/button_common_padding"
+        android:src="@drawable/button_device_add_xml"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/relatives_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/button_common_padding"
+        android:src="@drawable/button_device_add_xml"
+        android:visibility="gone" />
+
+</RelativeLayout>

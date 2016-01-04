@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_info_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/head_public" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dip"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="#00000000"
+                        android:src="@drawable/head_baby1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
+
+                    <care.widget.CircularImage
+                        android:id="@+id/baby_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="↑" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_image" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_info_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/baby_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text1"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/baby_name_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="4dip"
+                    android:background="@color/color_gray" />
+
+                <LinearLayout
+                    android:id="@+id/baby_sex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text2"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/baby_sex_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="4dip"
+                    android:background="@color/color_gray" />
+
+                <LinearLayout
+                    android:id="@+id/baby_birthday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text3"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/baby_birthday_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="4dip"
+                    android:background="@color/color_gray" />
+
+                <LinearLayout
+                    android:id="@+id/baby_height"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text4"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/baby_height_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text="cm"
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="4dip"
+                    android:background="@color/color_gray" />
+
+                <LinearLayout
+                    android:id="@+id/baby_width"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text5"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/baby_width_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text="kg"
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="4dip"
+                    android:background="@color/color_gray" />
+
+                <LinearLayout
+                    android:id="@+id/baby_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text6"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/baby_phone_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="4dip"
+                    android:background="@color/color_gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/baby_call"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text7"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/baby_call_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="4dip"
+                    android:background="@color/color_gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/baby_relieve"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip"
+                    android:paddingTop="5dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text8"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical">
+
+                        <ImageView
+                            android:layout_width="11dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/image_r" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:paddingRight="25dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_baobei_text9"
+                        android:textColor="@color/text2_color"
+                        android:textSize="16sp" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical" >
+
+                        <TextView
+                            android:layout_marginLeft="5dip"
+                            android:id="@+id/baby_imei_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:text=""
+                            android:textColor="@color/text1_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dip"></LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/progress_bar"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

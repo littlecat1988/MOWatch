@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/locus_bg"
+    android:orientation="vertical" >
+
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+       <RelativeLayout
+            android:layout_marginTop="0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:gravity="center"
+            >
+            <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+<!--             <TextView 
+               android:id="@+id/locus_ceshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结果是？"
+                /> -->
+                <ImageView
+                android:id="@+id/pointAndLine"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="63dp"
+                android:src="@drawable/lineoff" />
+                <!-- <ImageView
+                    android:id="@+id/pointAndLine"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginBottom="100dp"
+            		android:
+                    /> -->
+                <Button
+                    android:id="@+id/map_type2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginBottom="150dp"
+            		android:background="@color/color_white"
+            		android:text="2D"
+                    />
+        </RelativeLayout>
+        <LinearLayout 
+            		android:id="@+id/location_bar"
+    			    android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_alignParentBottom="true"
+            		android:layout_centerHorizontal="true"
+            		android:layout_marginBottom="20dp"
+            		android:background="@drawable/location_button_bg"
+    			    >
+        			<RelativeLayout
+        			    android:layout_width="fill_parent"
+            			android:layout_height="fill_parent"
+            			android:layout_weight="1"
+        			    >
+	    			    <ImageButton 
+	    			        android:id="@+id/to_location"
+	    			        android:layout_width="wrap_content"
+	            			android:layout_height="wrap_content"
+	            			android:padding="5dp"
+	            			android:layout_centerInParent="true"
+	            			android:src="@drawable/button_location"
+	            			android:background="@android:color/transparent"
+	    			        />
+    			    </RelativeLayout>
+    			    <RelativeLayout
+        			    android:layout_width="fill_parent"
+            			android:layout_height="fill_parent"
+            			android:layout_weight="1"
+        			    >
+    			    <ImageButton 
+    			        android:id="@+id/toLocus"
+    			        android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:padding="5dp"
+            			android:layout_centerInParent="true"
+            			android:src="@drawable/button_locus"
+            			android:background="@android:color/transparent"
+    			        />
+    			    </RelativeLayout>
+    			    <RelativeLayout
+        			    android:layout_width="fill_parent"
+            			android:layout_height="fill_parent"
+            			android:layout_weight="1"
+        			    >
+    			    <ImageButton 
+    			        android:id="@+id/to_listen"
+    			        android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:padding="5dp"
+            			android:layout_centerInParent="true"
+            			android:src="@drawable/button_listen"
+            			android:background="@android:color/transparent"
+    			        />
+    			    </RelativeLayout>
+    	            <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    <ImageButton
+                        android:id="@+id/to_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:src="@drawable/button_chat" />
+                     <TextView
+                        android:id="@+id/isRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/to_chat"
+                        android:background="@drawable/unread_count_bg"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+            </RelativeLayout>
+    			</LinearLayout>
+		<LinearLayout
+		    android:id="@+id/locus_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_locus_bar"
+            android:layout_above="@id/location_bar"
+            >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/iocus_left_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_left_xml" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center" >
+
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_bar"
+                    android:thumb="@drawable/thumb_bar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/iocus_right_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_right_xml" />
+            </LinearLayout>
+            
+        </LinearLayout>
+		
+         <include
+        android:id="@+id/tutorial_head"
+        layout="@layout/head_public_second" />
+    </RelativeLayout>
+
+</LinearLayout>

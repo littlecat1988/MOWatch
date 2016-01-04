@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/history"
+            android:textSize="25sp"
+            android:id="@+id/textView"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_date">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="周"
+            android:id="@+id/week"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/title_date_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:id="@+id/month"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/title_date_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:id="@+id/year"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/title_date_size"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:fillViewport="false">
+        <LinearLayout
+            android:id="@+id/chart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/group_step"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_sport_chart"
+                android:layout_marginTop="@dimen/historychart_margin_top"
+                android:layout_marginLeft="@dimen/historychartchart_margin_left"
+                android:layout_marginRight="@dimen/historychartchart_margin_right"
+                android:layout_marginBottom="@dimen/historychartchart_margin_bottom"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="步数"
+                        android:id="@+id/step_text"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/step_num"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp">
+                </lecho.lib.hellocharts.view.LineChartView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group_distance"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_sport_chart"
+                android:layout_marginTop="@dimen/historychart_margin_top"
+                android:layout_marginLeft="@dimen/historychartchart_margin_left"
+                android:layout_marginRight="@dimen/historychartchart_margin_right"
+                android:layout_marginBottom="@dimen/historychartchart_margin_bottom"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="步行 + 跑步距离"
+                        android:id="@+id/distance_text"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/distance_num"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/chart_distance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+            </lecho.lib.hellocharts.view.LineChartView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/group_height"
+                    android:layout_width="fill_parent"
+                    android:visibility="gone"
+                    android:layout_height="200dp"
+                    android:background="@drawable/bg_sport_chart"
+                    android:layout_marginTop="@dimen/historychart_margin_top"
+                    android:layout_marginLeft="@dimen/historychartchart_margin_left"
+                    android:layout_marginRight="@dimen/historychartchart_margin_right"
+                    android:layout_marginBottom="@dimen/historychartchart_margin_bottom"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="高度"
+                            android:id="@+id/height_text"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/height_num"
+                            android:layout_alignParentEnd="true"
+                            />
+                    </RelativeLayout>
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/chart_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                    </lecho.lib.hellocharts.view.LineChartView>
+                    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group_burn"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_sport_chart"
+                android:layout_marginTop="@dimen/historychart_margin_top"
+                android:layout_marginLeft="@dimen/historychartchart_margin_left"
+                android:layout_marginRight="@dimen/historychartchart_margin_right"
+                android:layout_marginBottom="@dimen/historychartchart_margin_bottom"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卡路里"
+                        android:id="@+id/burn_text"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/burn_num"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart_burn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                </lecho.lib.hellocharts.view.LineChartView>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+        </ScrollView>>
+
+
+</LinearLayout>

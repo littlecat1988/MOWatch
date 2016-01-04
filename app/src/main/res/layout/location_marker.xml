@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loc_marker_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/marker_info_back"
+        android:layout_width="200dip"
+        android:layout_height="80dip"
+        android:background="#aa000000"
+        android:orientation="horizontal"
+        android:weightSum="9" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/loc_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/loc_baby_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:background="#888888" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical" >
+             <TextView 
+            android:id="@+id/loc_day"
+            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textSize="10sp"
+        		android:textColor="@color/color_white"
+        		android:text="2015-11-12"
+                />
+            <TextView
+                android:id="@+id/loc_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:54:02"
+                android:textColor="@color/color_white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/loc_address"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:background="#888888" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/battery_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/battery_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textColor="@color/color_white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+<RelativeLayout 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/marker_info_back"
+        android:layout_centerHorizontal="true"
+	    >
+	    <ImageView 
+	        android:id="@+id/loc_marker"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/loc_marker"
+	        />
+	    
+	    <ImageView 
+	        android:id="@+id/head_icon"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+	        />
+	</RelativeLayout>
+
+</RelativeLayout>

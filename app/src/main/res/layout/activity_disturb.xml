@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/head_public" android:id="@+id/disturb"/>
+
+    <LinearLayout
+        android:id="@+id/switch_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="5dip"
+        android:layout_below="@id/disturb"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_text11"
+            android:textColor="@color/text2_color"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical">
+
+            <Switch
+                android:id="@+id/class_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/switch_off_string"
+                android:textOn="@string/switch_on_string"
+                android:checked="false"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/save_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:text="@string/save_string"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@drawable/text_color2" />
+    <ListView
+        android:id="@+id/list_disturb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:footerDividersEnabled="true"
+        android:divider="@android:color/holo_blue_bright"
+        android:dividerHeight="1dp"
+        android:layout_above="@id/save_id"
+        android:layout_below="@id/switch_linear">
+
+    </ListView>
+
+</RelativeLayout>

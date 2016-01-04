@@ -1,0 +1,30 @@
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:background="@drawable/shape"
+        android:alpha="0.5"
+        >
+        <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@anim/imofan_round_progress_bar_1" />
+        <TextView 
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dp"
+        	android:textColor="@color/color_white"
+        	android:text="@string/wait_respond"
+        	android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+

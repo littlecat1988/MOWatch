@@ -1,0 +1,14 @@
+<appconfig>
+<category>thirdparty</category>
+<recevier_id>codoon</recevier_id>
+<appname>Codoon</appname>
+<vxp num = '4'>
+	<vxpname platform = 'install'>codoon.vxp</vxpname>
+	<vxpname platform = 'pushonly'>codoon_driver.vtp</vxpname>
+        <vxpname platform = 'pushonly'>codoon_bmi055.vxp</vxpname>
+        <vxpname platform = 'pushonly'>codoon_bmi055_driver.vtp</vxpname>
+</vxp>
+<package>com.codoon.gps</package>
+<iconname>codoon_icon</iconname>
+<download_url>http://static.codoon.com/app/android/codoonsports.apk</download_url>
+</appconfig>

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_fence_add"
+    android:scrollbars="none" >
+    
+    <LinearLayout 
+            android:id="@+id/location_message_area"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" 
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+           	  android:orientation="vertical"
+           	  android:layout_weight="3"
+              >
+              <TextView
+              android:id="@+id/location_address"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              />
+              <TextView
+              android:id="@+id/location_message"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              />
+          </LinearLayout>
+          <RelativeLayout 
+              android:id="@+id/name_edit_area"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" 
+              android:layout_weight="7"
+              >
+	          <ImageButton 
+	              android:id="@+id/fence_edit"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_centerInParent="true"
+	              android:layout_marginRight="10dp"
+	              android:src="@drawable/button_fence_name_edit_xml"
+	              android:background="@android:color/transparent"
+	              />
+          </RelativeLayout>
+	</LinearLayout>
+    <LinearLayout 
+            android:id="@+id/fence_add_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_above="@id/location_message_area"
+            >
+          <com.amap.api.maps.MapView
+        	android:id="@+id/fence_add_map"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        /> 
+	</LinearLayout>
+	<LinearLayout 
+        android:id="@+id/head_public_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/head_public_second"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        	android:id="@+id/radius_change_area"
+        	android:background="@drawable/bg_fence_range"
+        	android:layout_centerHorizontal="true"
+			android:layout_above="@id/location_message_area"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="10dp"
+            android:weightSum="9"
+            >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/redu_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/button_redo_xml" 
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="center" 
+                android:orientation="vertical"
+                >
+				<TextView
+				    android:id="@+id/fence_radius"
+				    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="500m"
+				    />
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="30"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_bar"
+                    android:thumb="@drawable/thumb_bar" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:orientation="horizontal"
+                    >
+                    <TextView
+				    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="500m"
+				    />
+                    <!-- <TextView
+				    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="500m"
+				    /> -->
+                    <TextView
+				    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="2000m"
+				    />
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/plus_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/button_plus_xml" 
+                    android:background="@android:color/transparent" 
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+         <ImageButton
+            android:id="@+id/square_circle"
+    	    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/location_message_area"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:src="@drawable/circle"
+            android:layout_margin="10dp"
+    	    />
+            
+    
+	
+    
+    </RelativeLayout>
+
+

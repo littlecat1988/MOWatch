@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App Label -->
+    <string name="app_name">Watch</string>
+    <string name="app_id">1384401078477660</string>
+    <string name="mediatek">Mediatek inc.</string>
+    <string name="release_date">Release date</string>
+    <string name="version">Version</string>
+    <string name="date">2015.05.20</string>
+    <!--<string name="ok">OK</string>-->
+    <!--<string name="cancel">Cancel</string>-->
+    <string name="commit">Commit</string>
+    <string name="start">Start</string>
+
+    <!-- Scan & Connect -->
+    <string name="str_mtksmartdevice">MTK SmartDevice</string>
+    <string name="str_mtksmartwatch">MTK smartwatch</string>
+    <string name="cannot_scan">Cannot scan</string>
+    <string name="scan_pre">Scan</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="ble_not_supported">BLE is not supported in the Smart Phone</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not support</string>
+    <string name="connect_fail">SmartDevice connect fail</string>
+    <string name="add_watch_hint">Tap the watch image to connect it with your smart phone</string>
+    <string name="pls_switch_bt_on">"Please switch on Bluetooth"</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="connect_error">Connect Error</string>
+    <string name="no_connect">Smart Device is not connected</string>
+    <string name="switch_mode">Switch Mode</string>
+    <string name="switch_mode_spp">Switch Mode (SPP)</string>
+    <string name="switch_mode_dogp">Switch Mode (GATT)</string>
+    <string name="cannot_switch_mode">Cannot switch mode</string>
+    <string name="device_info">Device Info</string>
+    <string name="change_name_pre">Change Name</string>
+    <string name="change_name">Change Device Name</string>
+    <string name="connecting">Connecting...</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnecting">Disconnecting...\nTake some time when data is transmitting</string>
+    <string name="disconnect_dialog_title">Disconnect connection</string>
+    <string name="disconnect_dialog_message">Would you like to disconnect SmartDevice?</string>
+    <string name="shake_hand_fail">Please check your remote device</string>
+
+    <!-- preference -->
+    <string name="device">MY DEVICE</string>
+    <string name="smart_accessory_application">APPS AND SETTINGS</string>
+    <string name="select_blocks_activity">Select apps to unblock</string>
+
+    <!-- FME & PXP -->
+    <string name="find_me_button">Locate Watch</string>
+    <string name="find_me_using">Stop</string>
+    <string name="alert_setting">Alert</string>
+
+    <!-- YahooWeather -->
+    <string name="city_search_error">search city failed</string>
+    <string name="temp_unit">Temperature units</string>
+    <string name="city">City</string>
+    <string name="choose_city">Choose City</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="no_city">No City (Edit to Set City)</string>
+    <string name="current_city">Current City is :<xliff:g id="city">%s</xliff:g> (Edit to Change City)</string>
+
+    <!-- AboutActivity -->
+    <string name="about">About</string>
+    <string name="about_tittle">About MTK smart device manager</string>
+    <string name="manufacture">Manufacturer</string>
+
+    <!-- applist & appstore -->
+    <string name="uninstall">Uninstall</string>
+    <string name="uninstall_content">Would you like to uninstall this app?</string>
+    <string name="install_hint">Please Install</string>
+    <string name="install_background">Some App installing in the background, it may take a few minutes, please wait</string>
+    <string name="install_done">Install Done</string>
+    <string name="pre_install">Pre-installed in wearable device</string>
+    <string name="uninstall_hint">Doesn\'t exist in local, please uninstall</string>
+    <string name="launch_app">Click to Launch</string>
+    <string name="notifications">Notifications</string>
+    <string name="install_application">Install application</string>
+    <string name="installing">Installing</string>
+    <string name="install_into">into your smart watch</string>
+    <string name="warning_not_install">application not installed</string>
+    <string name="launchfail">Load Application Failed</string>
+    <string name="reachmax">Maximum downloading amount reached.</string>
+    <string name="download_fail">Failed to download</string>
+    <string name="file_lost">install failed, some files lost, please check.</string>
+    <string name="install">Install</string>
+    <string name="update">Update</string>
+    <string name="installing_hint">Installing...</string>
+    <string name="downloading_hint">Downloading...</string>
+    <string name="app_store">Smart device APP store</string>
+    <string name="uninstall_allvxp">Uninstall All VXP Items</string>
+    <string name="take_mins">"it may take a few minutes, please wait"</string>
+    <string name="try_later">Please try later</string>
+    <string name="test">Test notifications</string>
+    <string name="install_fail">Install fail</string>
+    <string name="install_fail_code"><xliff:g id="appname">%s</xliff:g> install failed, <xliff:g id="error">%s</xliff:g>. Deleting VXPs in watch.</string>
+    <string name="install_code_success">success</string>
+    <string name="install_code_error">unknown error</string>
+    <string name="install_code_error1">the parameter app_path is NULL</string>
+    <string name="install_code_error2">reach max installed app number</string>
+    <string name="install_code_error3">get app name tag error</string>
+    <string name="install_code_error4">alloc memory from engine fail</string>
+    <string name="install_code_error5">shortcut already installed</string>
+    <string name="install_code_error6">get shortcut installed info file fail</string>
+    <string name="install_code_error7">app already installed</string>
+    <string name="install_code_error8">get icon tag or app name tag fail</string>
+    <string name="install_code_error9">write installed info for build-in app fail</string>
+    <string name="install_code_error10">save icon fail</string>
+    <string name="install_code_error11">save installed info for vxp install fail</string>
+
+    <!-- SettingActivity -->
+    <string name="app_list">My Applications</string>
+    <string name="sms_preference_title">SMS service</string>
+    <string name="call_preference_title">Call service</string>
+    <string name="accessibility_prompt_title">Enable Accessibility</string>
+    <string name="accessibility_prompt_content">BTNotification is required to send applications\' notifications to your remote device. Press "OK" to go to the Accessibility settings to activate it.</string>
+    <string name="notificationlistener_prompt_title">Enable Notification</string>
+    <string name="notificationlistener_prompt_content">Mediatek SmartDevice is required to send applications\' notifications to your remote device. Press "OK" to go to the Notification access settings to activate it.</string>
+    <string name="progress_dialog_title">Loading</string>
+    <string name="progress_dialog_message">Please wait&#8230;</string>
+    <string name="save_successfully">Saved successfully</string>
+
+    <!-- SelectNotifiActivity -->
+    <string name="personal_apps_title">Personal app</string>
+    <string name="system_apps_title">System app</string>
+    <string name="button_save">Save</string>
+    <string name="button_select_all">Select All</string>
+    <string name="button_deselect_all">Unselect All</string>
+
+    <!-- SelectBlocksActivity -->
+    <string name="button_unblock">Unblock</string>
+
+    <!-- Service -->
+    <string name="notification_ticker_text">BTNotification connected remote device</string>
+    <string name="notification_ticker_battery">SmartDevice battery capacity: %1$d%%</string>
+    <string name="notification_title">Watch</string>
+    <string name="notification_content">SmartDevice Connected</string>
+    <string name="missed_call">Missed Call</string>
+    <string name="accessibility_description">Active notification service in your accessibility setting. This allows BT notification to push application notification to remote device.</string>
+    <string name="batterylow">Battery low</string>
+    <string name="pleaseconnectcharger">The battery is getting low,Please connect charger, Capacity</string>
+
+    <!-- Exit -->
+    <string name="str_searching">Searching</string>
+    <string name="str_send">send</string>
+    <string name="music">Music</string>
+    <string name="none">None</string>
+
+    <!-- Other -->
+    <string name="write_config_not_done">Writing app config</string>
+    <string name="notification_action_open">Open</string>
+
+    <!-- SmartDeviceFirmware -->
+    <string name="smart_device_firmware">Smart device firmware</string>
+    <string name="smart_device_tittle">CURRENT FIRMWARE</string>
+    <string name="menu_item_manager">Smart device manager</string>
+
+    <!-- Version list Activity -->
+    <string name="manufacture_title">Manufacture</string>
+    <string name="version_title">Version</string>
+    <string name="check_new_version">Check new version</string>
+    <string name="updating_firmware">Updating firmware to smart device. Please wait.</string>
+    <string name="no_update">The version is the latest.</string>
+    <string name="updated_firmware">Updated finished. Enjoy your new smart device.</string>
+
+    <!-- Check Dialog -->
+    <string name="check_sucess_message">New version already.</string>
+    <string name="check_fail_message">Checking new version failed. Please try later</string>
+    <string name="check_network_message">Connected to server has been lost, check your network and try again</string>
+    <string name="new_version_update">New version available Update ?</string>
+    <string name="connect_to_bt">Please Connect your phone and smart device via Bluetooth first.</string>
+    <string name="usb_firmware_note">Note:</string>
+    <string name="usb_firmware_information">Please ensure your smart device and phone is connected by USB cable. And do not disconnect them until firmware updating finished.</string>
+    <string name="new_version_text">New version :</string>
+    <string name="release_date_text">Release date:</string>
+    <string name="update_text">Update</string>
+    <string name="update_via_usb_first_text">Please connect your phone and smart device via USB cable first.</string>
+    <string name="updating_firmware_via_usb_text">Updating firmware to smart device. Please wait and ensure smart device and phone is connected via USB cable.</string>
+    <string name="current_state_text">Current state : </string>
+    <string name="unziping_text">Preparing!\r\nPlease wait for a moment!</string>
+    <string name="unzip_image_finished_text">UnZip finished!</string>
+    <string name="download_failed_text">Update failed, please check !</string>
+    <string name="no_cfg_file_existed_exception">No cfg file existed in the zip file</string>
+    <string name="download_succeed_via_bt">Download succeed, please wait to update success!</string>
+    <string name="send_firmware_date_success">Send firmware data success!</string>
+    <string name="send_firmware_date_fail">Send firmware data failed!</string>
+    <string name="bt_disconnected_while_transfer">The BT connection is disconnected!</string>
+    <string name="usb_disconnected_while_transfer">The smart device has been plug out!</string>
+    <string name="bt_disconnected_before_transfer">The BT connection is disconnected! Please connect the device first!</string>
+    <string name="download_information_title">Information</string>
+    <string name="download_information_message">Once detect the new version, will auto download the newest version in the background!</string>
+    <string name="fimrware_update_redbend_fota">Firmware update(Redbend FOTA)</string>
+    <string name="firmware_update_separate_bin">Firmware update(Separate BIN)</string>
+    <string name="firmware_update_usb_otg">Firmware update(USB OTG)</string>
+    <string name="firmware_update_usb_otg_file_manager">Firmware update(FileManager)</string>
+    <string name="firmware_update_full_bin">Firmware update(Full Bin)</string>
+    <string name="new_version_exist">New Version Exist</string>
+    <string name="download_text">Download</string>
+    <string name="downloadingt_text">Downloading</string>
+    <string name="checking_new_version_text">Check new version</string>
+    <string name="wating_text">Please waiting</string>
+    <string name="firmware_to_the_newest_version">Download complete\r\nUpdate?</string>
+    <string name="warning_text">Warning :</string>
+    <string name="version_text">Version :</string>
+    <string name="release_note_text">Release Note :</string>
+    <string name="feature_phone_low_battery">The smart device is low power, please retry after charged.</string>
+    <string name="warning_content_text">Please ensure wearable device and smart phone enough battery. Wearable device data will be modified while updating, be careful to use this function.</string>
+    <string name="warning_updating_text">Updating, please wait for updating finished or timeout (5min).</string>
+    <string name="background_is_busy_text">Service is busy, please wait!</string>
+    <string name="get_smart_device_version_fail">Failed to get SmartDevice version</string>
+    <string name="get_fota_type_failed">Failed to get SmartDevice FOTA type</string>
+    <string name="trigger_failed_due_to_low_battery">SmartDevice low battery ! Please charge, and try later !</string>
+    <string name="update_failed">SmartDevice update fail !</string>
+    <string name="firmware_file_not_found">Firmware file not found !</string>
+    <string name="failed_to_read_firmware_file">Failed to read firmware file !</string>
+    <string name="usb_download_confirm_message">Click OK to begin download, and plugin the USB cable into smart device.</string>
+
+    <!-- donwnlaod -->
+    <string name="start_download">Download</string>
+    <string name="DL_progress">progress</string>
+    <string name="DL_success">Download successfully.</string>
+    <string name="DL_fail">Download Failed.</string>
+    <string name="USB_Host_feature">Not support USB Host feature.</string>
+    <string name="device_detach">Device detached.</string>
+    <string name="permission_deny">Permission denied by user.</string>
+    <string name="no_device">Timeout, Not find device.</string>
+    <string name="no_feature">the android device no USB host feature, can not support download.</string>
+    <string name="load_device_mismatch">The load and target are mismatched.</string>
+    <string name="load_not_right">The load is not for MT6261/MT2502/MT2501.</string>
+
+    <!-- Alert settings -->
+    <string name="alert_preference_title">Alert</string>
+    <string name="range_category_text">RANGE ALERT</string>
+    <string name="range_alert_text">Range Alert</string>
+    <string name="range_type_text">When</string>
+    <string name="range_size_text">Range Size</string>
+    <string name="range_calibrate_text">Calibrate range size</string>
+    <string name="disconnection_text">DISCONNECTION SETTINGS</string>
+    <string name="disconnection_waring_title">Disconnect alert</string>
+    <string name="phone_alert_settings">PHONE ALERT SETTINGS</string>
+    <string name="ringtone_text">Alert ring</string>
+    <string name="vibration_text">Alert vibration</string>
+
+    <string-array name="range_alert_type_text">
+        <item>In range</item>
+        <item>Out of range</item>
+    </string-array>
+    <string-array name="range_alert_type_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="default_range_alert_type_value">1</string>
+
+    <string-array name="range_alert_size_text">
+        <item>Near</item>
+        <item>Far</item>
+    </string-array>
+    <string-array name="range_alert_size_detail_text">
+        <item>Near</item>
+        <item>Far</item>
+    </string-array>
+    <string-array name="range_alert_size_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="default_range_alert_size_value">1</string>
+    <string name="pxp_dialog_title">BLE Manager alert</string>
+    <string name="device_status_text_disconnected">disconnected</string>
+    <string name="device_status_text_in_range">in range</string>
+    <string name="device_status_text_out_range">out of range</string>
+    <string name="pxp_dialog_device_name">[%s]</string>
+    <string name="pxp_dialog_dismiss">Dismiss</string>
+    <string name="pxp_dialog_check">Check</string>
+    <string name="pxp_calibrate_message">Please put the two devices to a favorite distance, then press this item</string>
+    <string name="calibrate_dialog_title">Calibrating\u0020-\u0020%1$s</string>
+    <string name="calibrate_dialog_message">Please avoid to change the distance of the two devices</string>
+    <string name="calibrate_success">Calibration is successful.</string>
+    <string name="calibrate_failed">Calibration is failed, please make sure the devices is connected.</string>
+    <string name="ble_manager_alert">BLE Manager alert</string>
+    <string name="pxp_range_size_warning">Range size may change because of the device signal strength. Certain elements can weaken the strength such as your body, walls and other obstructions.</string>
+    <!-- main menu status -->
+    <string name="main_menu_in_range">In range</string>
+    <string name="main_menu_out_of_range">Out of range</string>
+    <string name="main_menu_ringing">Ringing\u2026</string>
+    <string name="text_view">TextView</string>
+    <!-- sos call -->
+    <string name="soscall">SOS Call</string>
+    <string name="onekey_soscall">One Key SOS Call</string>
+    <string name="multikey_soscall">Multi Key SOS Call</string>
+    <string name="add_number_hint">Tap to add sos call</string>
+    <string name="done">Done</string>
+    <string name="invalid_name">Name is empty</string>
+    <string name="invalid_phone">Phone number is empty</string>
+    <string name="call_mode_title">Choose call mode</string>
+    <string name="call_mode_loop">Auto loop</string>
+    <string name="call_mode_manual">Manual</string>
+    <string name="set">Set</string>
+    <string name="cant_enter_sos">Don\'t support sos call</string>
+    <string name="sos_response_error">Write failed, will synchronize with device later.</string>
+    <string name="load_sos_data">Getting data from device now, please wait</string>
+    <string name="operate_error">Failed</string>
+
+    <!-- Google Fit -->
+    <string name="gms_not_supported">Please install GMS(version 6.1 or higher) for GoogleFit feature</string>
+    <string name="network_not_supported">Please connect network for GoogleFit feature</string>
+    <string name="sign_in_google">Please sign in Google Account for GoogleFit feature</string>
+    <string name="accept_fit">Please accept permission request for GoogleFit feature</string>
+    <string name="test_fit_ui">GoogleFit Test UI</string>
+
+    <!-- authority management -->
+    <string name="permission_title">VXP Permission</string>
+    <string name="call_up">Call up</string>
+    <string name="send_sms">Send sms</string>
+    <string name="send_mms">Send mms</string>
+    <string name="switch_gprs">Open data connection</string>
+    <string name="connect_gprs">GPRS connected</string>
+    <string name="switch_wlan">Turn on Wi-Fi</string>
+    <string name="connect_wlan">WLAN connected</string>
+    <string name="enable_gps">Location</string>
+    <string name="call_record">Phone record</string>
+    <string name="record">Record</string>
+    <string name="camera">Camera/Video</string>
+    <string name="read_phonebook">Read phonebook</string>
+    <string name="read_calllog">Read call log</string>
+    <string name="read_sms">Read sms</string>
+    <string name="read_mms">Read mms</string>
+    <string name="switch_bluetooth">Turn on Bluetooth</string>
+    <string name="delete_sms">Delete sms</string>
+    <string name="cannot_modify_permission">Pre-installed VXP don\'t support to modify permissions.</string>
+    <string name="no_permission">Old version VXP, no permission to set.</string>
+    <string name="set_permission_error">Setting permission failed.</string>
+
+    <!-- Aster Watch log catcher with SPP -->
+    <string name="log_start">Catch Remote Device Log (start)</string>
+    <string name="log_connecting">Catch Remote Device Log (connecting)</string>
+    <string name="log_stop">Catch Remote Device Log (stop)</string>
+    <string name="log_scan">Please select a remote device</string>
+    <string name="log_fail">Start log service fail</string>
+    <string name="log_path">Catch log successfully! The log file is saved in </string>
+    <string name="write_fail">Write log fail </string>
+    <string name="first_alert">For the first time, please calibrate regional scope </string>
+
+    <!-- 20150706 -->
+    <string name="uv">UV</string>
+    <string name="syncdata">Sync Data</string>
+    <string name="sport">Sport</string>
+    <string name="history">History</string>
+    <string name="query">Query</string>
+    <string name="person_info">Person Info</string>
+    <string name="heartrate">HeartRate</string>
+    <string name="sleep">Sleep</string>
+    <string name="self_timer">Self-timer</string>
+    <string name="binding">Binding</string>
+    <string name="anti_lost">Anti-lost</string>
+    <string name="setting">Setting</string>
+    <string name="total_steps">Total Steps</string>
+    <string name="distance_unit">KM</string>
+    <string name="calories_unit">KCAL</string>
+    <string name="unit_hr">BMP</string>
+    <string name="wait_hr_data">Detecting, Please wait...</string>
+    <string name="complete">Complete</string>
+    <string name="tips_uv">TIP:</string>
+    <string name="content_uv1">Weak Radiation \nSPF 12-15 \nPA+</string>
+    <string name="content_uv2">Moderate Radiation \nSPF >15 \nPA+</string>
+    <string name="content_uv3">Radiation Intensity \nSPF >20 \nPA++</string>
+    <string name="content_uv4">Strong Radiation \nSPF >20 \nPA++</string>
+    <string name="customer">Customer</string>
+    <string name="nickname">Nickname: </string>
+    <string name="birth">Birth</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="title_day">DAY</string>
+    <string name="title_month">MONTH</string>
+    <string name="title_year">YEAR</string>
+    <string name="hint_input">Please input...</string>
+    <string name="register">Register</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="is_email">Please input correct e-mail</string>
+    <string name="register_success">Register success,please activate your email!</string>
+    <string name="register_failed">Register failed,please check your email or password!</string>
+    <string name="tips_password">You password is too short</string>
+    <string name="login_fail">Login failed,please check your account or password!</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="sync">Sync</string>
+    <string name="save">Save</string>
+    <string name="detecting">Detecting, please wait...</string>
+    <string name="MON">MON</string>
+    <string name="TUE">TUE</string>
+    <string name="WED">WED</string>
+    <string name="THU">THU</string>
+    <string name="FRI">FRI</string>
+    <string name="SAT">SAT</string>
+    <string name="SUN">SUN</string>
+    <string name="JAN">JAN</string>
+    <string name="FEB">FEB</string>
+    <string name="MAR">MAR</string>
+    <string name="APR">APR</string>
+    <string name="MAY">MAY</string>
+    <string name="JUN">JUN</string>
+    <string name="JUL">JUL</string>
+    <string name="AUG">AUG</string>
+    <string name="SEP">SEP</string>
+    <string name="OCT">OCT</string>
+    <string name="NOV">NOV</string>
+    <string name="DEC">DEC</string>
+    <string name="deep_sleep">Deep Sleep</string>
+    <string name="light_sleep">Light Sleep</string>
+    <string name="wake">Wake</string>
+    <string name="start_sleep">Start Sleep</string>
+    <string name="stop_sleep">Stop Sleep</string>
+    <string name="total_sleep">Total Time</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="download_data">Download Data</string>
+    <string name="sync_sucess">Sync Sucess!</string>
+    <string name="sync_failed">Sync Failed!</string>
+    <string name="download_sucess">Download Sucess!</string>
+    <string name="download_failed">Download Failed!</string>
+    <string name="hr_disconnected">Please connect your heart rate device</string>
+    <!-- 20150819 -->
+    <string name="step">STEP</string>
+    <string name="distance">DISTANCE</string>
+    <string name="burn">BURN</string>
+    <string name="tips_no_data">No Data</string>
+    <string name="soft_update_title">Software Update</string>
+    <string name="soft_update_info">Mo Watch needs a new version,update?</string>
+    <string name="soft_update_updatebtn">Update Now</string>
+    <string name="soft_update_later">Update Later</string>
+    <string name="soft_updating">Update...</string>
+    <string name="soft_update_cancel">Cancel Update</string>
+    
+    <string name="open_sport">Open Pedometer</string>
+    <string name="close_sport">Close Pedometer</string>
+    <string name="walk_sport">WALK</string>
+    <string name="run_sport">RUN</string>
+    
+    <string name="cloud_data">Cloud Data</string>
+    <string name="total_days">Total Days</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="total_cals">Total Cals</string>
+    <string name="days_cloud"> Days</string>
+    <string name="km_cloud"> KM</string>
+    <string name="cal_cloud"> Cal</string>
+    
+    <string name="synchronizing">Synchronizing...</string>
+    <string name="hour">h</string>
+    <string name="min">mins</string>
+    
+    <string name="tips_title_hr">Last heart rate: </string>
+    <string name="upload_wait">Uploading,please wait... </string>
+ <string name="upload_complete">Upload Complete </string>
+ <string name="init_ble">Init ble,please wait... </string>
+ <string name="sync_failed_sport">Sync failed,please resync</string>
+
+<!--add by lixiang for childcare 20151104-->
+    <string name="login_string">登&#160;录</string>
+    <string name="input_phone_string">请输入您的手机号</string>
+    <string name="input_pass_string">请输入登陆密码</string>
+    <string name="find_pass_string">找回密码</string>
+    <string name="input_sms_string">输入4位验证码</string>
+    <string name="set_pass_string">密码由6-12个字符组成</string>
+
+    <string name="error_string1">输入的手机号不合法</string>
+    <string name="error_string2">验证码不能为空</string>
+    <string name="error_string3">输入的密码不能为空</string>
+    <string name="error_string4">确认密码不能为空</string>
+    <string name="error_string5">输入的密码不符合要求</string>
+    <string name="error_string6">两次密码输入的不一致</string>
+    <string name="error_string7">不存在此手机号码</string>
+    <!-- 注册界面 -->
+    <string name="register_string">注&#160;册</string>
+    <string name="re_set_string">再次输入确认密码</string>
+    <string name="get_sms_string">获取验证码</string>
+    <string name="complete_string">下一步</string>
+    <string name="rule1_string">继续将同意</string>
+    <string name="rule2_string">使用条款</string>
+    <string name="rule3_string">和</string>
+    <string name="rule4_string">隐私政策</string>
+    <string name="next">下一步</string>
+    <string name="sms_sent">验证码已经发送</string>
+    <string name="error_sms">验证码错误</string>
+    <!--<string name="register_success">注册成功</string>-->
+    <string name="error_register">注册成功</string>
+    <string name="you_choose">您可以选择:</string>
+    <string name="or">或</string>
+    <string name="input_string">手动输入</string>
+    <!-- 拍照 -->
+    <string name="update_head_image_string">修改头像</string>
+    <string name="xiangji_string">拍照</string>
+    <string name="xiangce_string">从相册中获取</string>
+    <string name="take_photo">拍&#160;照</string>
+    <string name="local_valley">本地相册</string>
+    <string name="photo_huoqu_cancle">取消选择头像</string>
+    <string name="photo_huoqu_fail">获取头像失败</string>
+
+    <!-- 绑定设备信息 -->
+    <string name="add_baobei_title">绑定设备</string>
+    <!--<string name="no_device">还没绑定设备,请绑定</string>-->
+    <!-- 扫描界面 -->
+    <string name="validate_code">验证一维码</string>
+    <string name="scan_tip">随便看看</string>
+    <string name="scan_tips">请扫描说明书上的一维码完成绑定</string>
+    <string name="scan_fail">扫描一维码失败</string>
+    <string name="code_text">一维码信息:%1$s</string>
+
+    <!-- 我的信息界面 -->
+    <string name="my_info_string">我的信息</string>
+    <string name="exit_string">退出登陆</string>
+    <string name="nicheng_string">昵称:</string>
+    <string name="phone_string">电话号码:</string>
+    <string name="height_string">身高:</string>
+    <string name="weight_string">体重:</string>
+
+    <!-- 宝贝信息界面 -->
+    <string name="baobei_info_string">宝贝信息</string>
+    <string name="jiechu_bond">解除绑定</string>
+    <string name="jiechu_success">解除绑定成功</string>
+
+    <!-- 添加宝贝界面 -->
+    <string name="add_bond_string">添加宝贝信息</string>
+    <string name="complete_add">完成添加</string>
+    <string name="device_error1">设备昵称不能为空</string>
+    <string name="device_error2">设备昵称的长度在6至12个字符中间</string>
+    <string name="device_error3">设备电话号码不能为空</string>
+    <string name="device_error4">设备电话号码格式不对</string>
+    <!-- 设置宝贝资料 -->
+    <string name="set_baobei_height">设置宝贝高度</string>
+    <string name="set_baobei_weight">设置宝贝体重</string>
+    <string name="set_baobei_photo">设置宝贝头像</string>
+
+    <string name="set_baobei_title">宝贝信息</string>
+    <string name="set_baobei_text1">昵称：</string>
+    <string name="set_baobei_text2">性别：</string>
+    <string name="set_baobei_text3">生日：</string>
+    <string name="set_baobei_text4">身高：</string>
+    <string name="set_baobei_text5">体重：</string>
+    <string name="set_baobei_text6">手机号码：</string>
+    <string name="set_baobei_text7">我是宝贝的：</string>
+    <string name="set_baobei_text8">解除绑定</string>
+    <string name="set_baobei_text9">IMEI:</string>
+    <!-- 亲情号码 -->
+    <string name="qingqing_string">亲情号码</string>
+    <string name="add_complete">确定添加</string>
+    <!-- 添加亲情号码 -->
+    <string name="add_qinqing_error1">亲情号码不能为空</string>
+    <string name="add_qinqing_error2">关系不能为空</string>
+    <!-- 其他人资料 -->
+    <string name="person_other">资&#160;料</string>
+    <string name="delete_person">删除亲情号码</string>
+    <!-- 宝贝管理 -->
+    <string name="baobei_manager_string">宝贝管理</string>
+    <!-- 通用 -->
+    <string name="save_success">保存成功</string>
+    <string name="no_function">功能还在开发...</string>
+    <string name="network_error">请确定网络开启!</string>
+    <string name="click_again">再按返回键退出程序</string>
+    <string name="dialog_text_2">请输入新的昵称</string>
+    <string name="ok">确&#160;定</string>
+    <string name="cancel">取&#160;消</string>
+    <string name="delete_success">删除成功</string>
+    <string name="save_string">保存</string>
+
+    <string name="switch_on_string">开启</string>
+    <string name="switch_off_string">关闭</string>
+    <string name="edit_name">编辑名称</string>
+    <!--电子围栏  -->
+    <string name="circle_radius">围栏半径:</string>
+    <string name="fence">电子围栏</string>
+    <string name="circle_range">方圆</string>
+    <string name="fence_add_success">围栏添加成功</string>
+    <string name="fence_add_fail">围栏添加失败</string>
+    <string name="fence_delete_success">围栏删除成功</string>
+    <string name="fence_delete_fail">围栏删除失败</string>
+    <string name="fence_edit_success">围栏编辑成功</string>
+    <string name="fence_edit_fail">围栏编辑失败</string>
+    <string name="fence_delete_alert">请确定是否删除该围栏信息</string>
+    <string name="alert">提示</string>
+    <string name="fence_name1">家</string>
+    <string name="fence_name2">奶奶家</string>
+    <string name="fence_name3">姥姥家</string>
+    <string name="fence_name4">学校</string>
+    <string name="fence_name5">辅导班</string>
+    <string name="fence_name6">老师家</string>
+    <string name="not_add">还没有添加电子围栏,请添加</string>
+    <!-- 轨迹 -->
+    <string name="locus_title">今天的轨迹</string>
+    <string name="locus_title2">的轨迹</string>
+
+    <!-- 定位 -->
+    <string name="loc_lbs">基站定位</string>
+    <string name="loc_gps">卫星定位</string>
+    <string name="position">位置</string>
+    <string name="loading">请稍等&#8230;</string>
+    <string name="wait_respond">等待腕表回复,可能需要一分钟</string>
+
+    <string name="locus_data">{"postionlist":[{"battery":"10","ptype":"1","siggps":"5","siggsm":"100","time":"2015-07-10 00:03:23","x":"114.0333070643909","y":"22.629516485565418"},{"battery":"9","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 00:08:23","x":"114.03339055361903","y":"22.629114971731497"},{"battery":"8","ptype":"1","siggps":"7","siggsm":"100","time":"2015-07-10 00:13:23","x":"114.033330450964","y":"22.629551555074862"},{"battery":"8","ptype":"1","siggps":"8","siggsm":"100","time":"2015-07-10 00:18:23","x":"114.0335458914121","y":"22.62911205687071"},{"battery":"7","ptype":"1","siggps":"8","siggsm":"100","time":"2015-07-10 00:23:24","x":"114.03245681797151","y":"22.628725704955826"},{"battery":"7","ptype":"1","siggps":"8","siggsm":"100","time":"2015-07-10 00:28:24","x":"114.03260380257551","y":"22.628646090144986"},{"battery":"6","ptype":"1","siggps":"9","siggsm":"100","time":"2015-07-10 00:33:23","x":"114.03335883242966","y":"22.629339926747868"},{"battery":"6","ptype":"1","siggps":"9","siggsm":"100","time":"2015-07-10 00:38:24","x":"114.03340559728191","y":"22.62928337608873"},{"battery":"5","ptype":"1","siggps":"8","siggsm":"100","time":"2015-07-10 00:43:23","x":"114.03340393736404","y":"22.6294434005491"},{"battery":"4","ptype":"1","siggps":"9","siggsm":"100","time":"2015-07-10 00:48:24","x":"114.03338891447216","y":"22.629595054124366"},{"battery":"3","ptype":"1","siggps":"7","siggsm":"100","time":"2015-07-10 00:53:23","x":"114.03346229182604","y":"22.627808263738448"},{"battery":"3","ptype":"1","siggps":"7","siggsm":"100","time":"2015-07-10 00:58:24","x":"114.0334006025984","y":"22.62953340784034"},{"battery":"3","ptype":"1","siggps":"8","siggsm":"100","time":"2015-07-10 01:03:24","x":"114.03322020700132","y":"22.629496247219492"},{"battery":"3","ptype":"1","siggps":"9","siggsm":"100","time":"2015-07-10 01:08:24","x":"114.0330615366549","y":"22.62964251122383"},{"battery":"3","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 01:13:24","x":"114.03307493197156","y":"22.63014763915"},{"battery":"3","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 01:18:24","x":"114.03316509956879","y":"22.629694467472326"},{"battery":"2","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 01:23:24","x":"114.03321520677743","y":"22.629661263589806"},{"battery":"2","ptype":"1","siggps":"7","siggsm":"100","time":"2015-07-10 01:28:24","x":"114.0334723889292","y":"22.628968499437644"},{"battery":"1","ptype":"1","siggps":"7","siggsm":"100","time":"2015-07-10 01:33:24","x":"114.0334222799768","y":"22.628970031196143"},{"battery":"0","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 01:38:25","x":"114.03350913358756","y":"22.628938593138134"},{"battery":"0","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 01:43:25","x":"114.03344231993003","y":"22.628913408388872"},{"battery":"3","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:13:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"17","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:18:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"22","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:23:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"28","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:28:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"32","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:33:57","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"34","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:38:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"36","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:43:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"37","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:48:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery":"40","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:53:56","x":"114.03319578616095","y":"22.628494737214744"},{"battery
+":"42","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 07:58:57","x":"114.03559641729066","y":"22.625761949587314"},{"battery":"34","ptype":"0","siggps":"0","siggsm":"0","time":"2015-07-10 08:03:57","x":"114.03524831740356","y":"22.630774634129317"},{"battery":"33","ptype":"1","siggps":"4","siggsm":"99","time":"2015-07-10 08:08:56","x":"114.03150962176201","y":"22.627147836532526"},{"battery":"32","ptype":"1","siggps":"4","siggsm":"35","time":"2015-07-10 08:13:58","x":"114.02842610433493","y":"22.628751244944585"},{"battery":"32","ptype":"1","siggps":"4","siggsm":"100","time":"2015-07-10 08:18:57","x":"114.02585198236204","y":"22.631307771196152"},{"battery":"31","ptype":"1","siggps":"7","siggsm":"100","time":"2015-07-10 08:23:57","x":"114.02520555952553","y":"22.632727855154045"},{"battery":"31","ptype":"1","siggps":"6","siggsm":"65","time":"2015-07-10 08:28:57","x":"114.02409116364782","y":"22.631164372545474"},{"battery":"31","ptype":"1","siggps":"7","siggsm":"50","time":"2015-07-10 08:33:56","x":"114.01614677646272","y":"22.603409824980144"},{"battery":"31","ptype":"0","siggps":"0","siggsm":"79","time":"2015-07-10 08:38:56","x":"114.01581167019901","y":"22.588432112136278"},{"battery":"30","ptype":"1","siggps":"7","siggsm":"28","time":"2015-07-10 08:44:10","x":"114.01861184448182","y":"22.562047040414647"},{"battery":"30","ptype":"0","siggps":"0","siggsm":"5","time":"2015-07-10 08:51:09","x":"114.00435774094308","y":"22.555422168058662"},{"battery":"29","ptype":"0","siggps":"0","siggsm":"94","time":"2015-07-10 08:53:57","x":"113.98355805429935","y":"22.553944729001913"},{"battery":"29","ptype":"0","siggps":"0","siggsm":"60","time":"2015-07-10 08:58:57","x":"113.97426654866644","y":"22.55419543253543"},{"battery":"29","ptype":"0","siggps":"0","siggsm":"38","time":"2015-07-10 09:04:03","x":"113.96401488531194","y":"22.550814192310764"},{"battery":"29","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 09:08:57","x":"113.95760168531194","y":"22.553027992310763"},{"battery":"28","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 09:13:57","x":"113.9526357515939","y":"22.557552722644502"},{"battery":"28","ptype":"1","siggps":"7","siggsm":"39","time":"2015-07-10 09:18:57","x":"113.95163218321744","y":"22.55589083160727"},{"battery":"28","ptype":"1","siggps":"5","siggsm":"40","time":"2015-07-10 09:23:59","x":"113.94901039794325","y":"22.555719198956798"},{"battery":"28","ptype":"1","siggps":"7","siggsm":"80","time":"2015-07-10 09:28:57","x":"113.94666261884147","y":"22.556693410886762"},{"battery":"28","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 09:33:57","x":"113.94541269693505","y":"22.55398602082205"},{"battery":"27","ptype":"1","siggps":"7","siggsm":"100","time":"2015-07-10 09:38:57","x":"113.94521226232456","y":"22.550607064170737"},{"battery":"27","ptype":"1","siggps":"8","siggsm":"100","time":"2015-07-10 09:43:57","x":"113.9416785830635","y":"22.549532930503688"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"96","time":"2015-07-10 09:48:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"90","time":"2015-07-10 09:53:58","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"91","time":"2015-07-10 09:58:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"89","time":"2015-07-10 10:04:01","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"85","time":"2015-07-10 10:08:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"95","time":"2015-07-10 10:13:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"90","time":"2015-07-10 10:18:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"90","time":"2015-07-10 10:23:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"89","time":"2015-07
+-10 10:28:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"66","time":"2015-07-10 10:33:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"43","time":"2015-07-10 10:38:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"30","time":"2015-07-10 10:43:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"62","time":"2015-07-10 10:48:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"27","ptype":"0","siggps":"0","siggsm":"68","time":"2015-07-10 10:53:58","x":"113.942304414116","y":"22.549304812788236"},{"battery":"26","ptype":"0","siggps":"0","siggsm":"70","time":"2015-07-10 10:58:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"26","ptype":"0","siggps":"0","siggsm":"57","time":"2015-07-10 11:03:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"25","ptype":"0","siggps":"0","siggsm":"55","time":"2015-07-10 11:08:58","x":"113.942304414116","y":"22.549304812788236"},{"battery":"25","ptype":"0","siggps":"0","siggsm":"30","time":"2015-07-10 11:13:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"25","ptype":"0","siggps":"0","siggsm":"54","time":"2015-07-10 11:18:58","x":"113.942304414116","y":"22.549304812788236"},{"battery":"25","ptype":"0","siggps":"0","siggsm":"49","time":"2015-07-10 11:23:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"24","ptype":"0","siggps":"0","siggsm":"57","time":"2015-07-10 11:28:58","x":"113.942304414116","y":"22.549304812788236"},{"battery":"24","ptype":"0","siggps":"0","siggsm":"65","time":"2015-07-10 11:33:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"23","ptype":"0","siggps":"0","siggsm":"35","time":"2015-07-10 11:38:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"23","ptype":"0","siggps":"0","siggsm":"36","time":"2015-07-10 11:43:57","x":"113.94093683911603","y":"22.550980112788235"},{"battery":"23","ptype":"0","siggps":"0","siggsm":"37","time":"2015-07-10 11:48:58","x":"113.94093683911603","y":"22.550980112788235"},{"battery":"22","ptype":"0","siggps":"0","siggsm":"28","time":"2015-07-10 11:53:57","x":"113.94093683911603","y":"22.550980112788235"},{"battery":"22","ptype":"0","siggps":"0","siggsm":"63","time":"2015-07-10 11:58:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"21","ptype":"0","siggps":"0","siggsm":"42","time":"2015-07-10 12:03:58","x":"113.94093683911603","y":"22.550980112788235"},{"battery":"21","ptype":"0","siggps":"0","siggsm":"57","time":"2015-07-10 12:08:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"21","ptype":"0","siggps":"0","siggsm":"65","time":"2015-07-10 12:13:57","x":"113.94093683911603","y":"22.550980112788235"},{"battery":"20","ptype":"0","siggps":"0","siggsm":"62","time":"2015-07-10 12:18:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"20","ptype":"0","siggps":"0","siggsm":"67","time":"2015-07-10 12:24:02","x":"113.942304414116","y":"22.549304812788236"},{"battery":"20","ptype":"0","siggps":"0","siggsm":"64","time":"2015-07-10 12:28:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"19","ptype":"0","siggps":"0","siggsm":"48","time":"2015-07-10 12:33:59","x":"113.94093683911603","y":"22.550980112788235"},{"battery":"19","ptype":"0","siggps":"0","siggsm":"44","time":"2015-07-10 12:38:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"18","ptype":"0","siggps":"0","siggsm":"16","time":"2015-07-10 12:43:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"18","ptype":"0","siggps":"0","siggsm":"64","time":"2015-07-10 12:48:57","x":"113.942304414116","y":"22.549304812788236"},{"battery":"18","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 12:53:57","x":"113.94093683911603","y":"22.550980112788235"},{"battery":"17","ptype":"0","siggps":"0","siggsm":"100","time":"2015-07-10 12:58:57","x":"113.94696361832513","y":"22.550314319847878"},{"battery":"15","ptype":"
+1","siggps":"9","siggsm":"15","time":"2015-07-10 13:03:57","x":"113.97539290574034","y":"22.554384463243426"},{"battery":"14","ptype":"1","siggps":"11","siggsm":"100","time":"2015-07-10 13:08:57","x":"114.02094521051875","y":"22.552129663293464"},{"battery":"13","ptype":"1","siggps":"11","siggsm":"100","time":"2015-07-10 13:13:58","x":"114.03088369610626","y":"22.531203127000083"},{"battery":"12","ptype":"1","siggps":"12","siggsm":"100","time":"2015-07-10 13:18:57","x":"114.03088370504629","y":"22.53134146812395"},{"battery":"11","ptype":"1","siggps":"10","siggsm":"100","time":"2015-07-10 13:23:58","x":"114.02562159002298","y":"22.530218317175304"},{"battery":"10","ptype":"1","siggps":"12","siggsm":"100","time":"2015-07-10 13:28:57","x":"114.03095554548108","y":"22.531548344190938"},{"battery":"9","ptype":"0","siggps":"0","siggsm":"90","time":"2015-07-10 13:33:57","x":"114.02984941528905","y":"22.531072210538916"},{"battery":"8","ptype":"0","siggps":"0","siggsm":"89","time":"2015-07-10 13:38:57","x":"114.02984941528905","y":"22.531072210538916"},{"battery":"7","ptype":"1","siggps":"4","siggsm":"43","time":"2015-07-10 13:43:58","x":"114.03189600177795","y":"22.532067619024346"},{"battery":"6","ptype":"1","siggps":"13","siggsm":"100","time":"2015-07-10 13:48:57","x":"114.03015541417963","y":"22.531474465039"},{"battery":"6","ptype":"1","siggps":"14","siggsm":"100","time":"2015-07-10 13:53:58","x":"114.029853107693","y":"22.53211533040919"},{"battery":"5","ptype":"1","siggps":"9","siggsm":"55","time":"2015-07-10 13:58:58","x":"114.02211362863099","y":"22.535655201490197"},{"battery":"4","ptype":"1","siggps":"9","siggsm":"100","time":"2015-07-10 14:03:57","x":"113.99520966636321","y":"22.53277278612039"},{"battery":"3","ptype":"1","siggps":"10","siggsm":"100","time":"2015-07-10 14:08:57","x":"113.97553208403394","y":"22.536728509053688"},{"battery":"3","ptype":"1","siggps":"9","siggsm":"100","time":"2015-07-10 14:13:57","x":"113.96716685780403","y":"22.539580532912954"},{"battery":"3","ptype":"1","siggps":"4","siggsm":"100","time":"2015-07-10 14:18:57","x":"113.96772121646381","y":"22.538888519590135"},{"battery":"3","ptype":"1","siggps":"6","siggsm":"100","time":"2015-07-10 14:23:57","x":"113.96747239293985","y":"22.538744562367153"},{"battery":"3","ptype":"1","siggps":"5","siggsm":"100","time":"2015-07-10 14:28:57","x":"113.96769282359413","y":"22.538816777971704"},{"battery":"3","ptype":"1","siggps":"11","siggsm":"100","time":"2015-07-10 14:33:57","x":"113.96862300912251","y":"22.53941579601941"},{"battery":"2","ptype":"1","siggps":"10","siggsm":"100","time":"2015-07-10 14:38:57","x":"113.9688501158502","y":"22.53930802349097"},{"battery":"2","ptype":"1","siggps":"11","siggsm":"100","time":"2015-07-10 14:43:57","x":"113.96879834928903","y":"22.53934122944593"},{"battery":"0","ptype":"1","siggps":"11","siggsm":"100","time":"2015-07-10 14:53:57","x":"113.9455838118791","y":"22.54224538884762"},{"battery":"2","ptype":"0","siggps":"0","siggsm":"48","time":"2015-07-10 15:44:10","x":"113.94123277976325","y":"22.54881301330439"},{"battery":"11","ptype":"0","siggps":"0","siggsm":"66","time":"2015-07-10 15:49:12","x":"113.942304414116","y":"22.549304812788236"},{"battery":"18","ptype":"0","siggps":"0","siggsm":"54","time":"2015-07-10 15:54:11","x":"113.942304414116","y":"22.549304812788236"},{"battery":"25","ptype":"0","siggps":"0","siggsm":"57","time":"2015-07-10 15:59:11","x":"113.942304414116","y":"22.549304812788236"},{"battery":"31","ptype":"0","siggps":"0","siggsm":"54","time":"2015-07-10 16:04:39","x":"113.942304414116","y":"22.549304812788236"}],"reason":"","result":"0"}</string>
+    <!--倾听  -->
+    <string name="qingtin_alertdialog_title">启动监护</string>
+    <string name="qingtin_alertdialog_count1">手表即将回拨</string>
+    <string name="qingtin_alertdialog_count2">,继续？</string>
+    <string name="listen_success">监护成功!</string>
+    <string name="listen_failed">监护失败!</string>
+
+    <!--宝贝管理  -->
+    <string name="mine">我的设备:</string>
+    <string name="share_to_me">他人分享的设备:</string>
+    <string name="long_click_change">(长按更换宝贝)</string>
+    <string name="share">分享该设备</string>
+    <string name="share_agree">同意分享</string>
+    <string name="share_agreed">同意</string>
+    <string name="share_cancel">取消</string>
+    <string name="share_alarm1">是否同意来自</string>
+    <string name="share_alarm2">的分享</string>
+    <string name="set_baby_now">是否设为当前宝贝</string>
+    <string name="current_device">当前设备</string>
+    <string name="baby_change">切换</string>
+    <!-- 设备分享 -->
+    <string name="device_share">设备分享</string>
+    <string name="manager_together">一起管理的家庭成员</string>
+    <string name="input_manager_number">输入要添加的亲人的手机号</string>
+    <string name="invite_alarm">邀请的手机号将可以看到孩子的信息,请确保输入的手机号正确</string>
+    <string name="invite_people">邀请亲人</string>
+    <string name="invite_join">邀请加入</string>
+
+    <!-- 更新对话框 -->
+    <string name="update_alertdialog_title">版本升级</string>
+    <string name="update_alertdialog_count1">有新版本，更新吗？</string>
+    <string name="version_current">当前版本:%1$s</string>
+    <string name="version_update">新版本:%1$s</string>
+    <string name="update_alertdialog_yes">确定</string>
+    <string name="update_alertdialog_no">取消</string>
+    <string name="wristwatch_txt">腕表号码: </string>
+    <string name="masterfamily_txt">主亲情号: </string>
+    <!-- 意见反馈 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_text1">意见反馈:</string>
+    <string name="feedback_text2">服务电话(9:00-18:00):400 0815 375</string>
+    <string name="feedback_button_text">提交</string>
+    <string name="feedback_hint1">请输入您的反馈内容</string>
+    <string name="feedback_error1">请输入您的反馈内容</string>
+
+    <!-- 远程控制 -->
+    <string name="setting_far">远程设置</string>
+    <string name="setting_complete">完成设置</string>
+    <string name="setting_success">设置成功</string>
+    <string name="setting_failed">设置失败</string>
+    <!-- 分享 -->
+    <string name="user">用户</string>
+    <string name="share_word">向您分享设备</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--主界面  -->
+    <string name="shooting_star">流星</string>
+    <string name="find_baby">找宝贝</string>
+    <string name="fence_care">电子护栏</string>
+    <string name="baby_loc">宝贝定位</string>
+    <!--解除绑定  -->
+    <string name="unbind_success">解绑成功</string>
+    <string name="unbind_failed">解绑失败</string>
+    <string name="unbind_alarm">解除绑定会删除掉该宝贝的所有信息,确定吗?</string>
+
+    <string name="exit">退出登录</string>
+    <string name="exit_alarm">确定退出当前用户?</string>
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_text1">个人信息</string>
+    <string name="setting_text2">意见反馈</string>
+    <string name="setting_text9">低电量提醒</string>
+    <string name="setting_text5">防脱落</string>
+    <string name="setting_text6">远程关机</string>
+    <string name="setting_text7">驱蚊</string>
+    <string name="setting_text8">爱心奖励</string>
+    <string name="setting_text10">定位选择</string>
+    <string name="setting_text3">关于我们</string>
+    <string name="setting_text4">版本升级</string>
+    <string name="setting_text11">上课防打扰开关</string>
+    <string name="yes_tuo">脱落</string>
+    <string name="nos_tuo">戴上</string>
+    <string name="power_status">关机</string>
+    <string name="quwen_status">启动</string>
+    <string name="normal_status">正常</string>
+    <string name="low_status">低电</string>
+
+    <string name="remain_string">其他提醒</string>
+    <string name="remain_clock">闹钟提醒</string>
+    <string name="remain_disturb">上课防打扰</string>
+    <string name="remain_sleep">睡眠提醒</string>
+    <!-- 通用 -->
+    <string name="other1">成功！</string>
+    <string name="other2">失败！</string>
+    <string name="other3">绑定不合法</string>
+    <string name="other4">已经被绑定</string>
+
+    <!-- 互动 -->
+    <string name="interation_title">亲子互动</string>
+    <string name="interation_title1">儿童端</string>
+    <string name="interation_title2">家长端</string>
+    <string name="interation_title3">华强云</string>
+    <string name="interation_jiazhang_title1">原版动画</string>
+    <string name="interation_jiazhang_title2">在先学习</string>
+    <string name="interation_jiazhang_title3">育儿</string>
+
+    <!-- 个人信息 -->
+    <string name="pserson_title">个人信息</string>
+    <string name="pserson_error1">昵称长度不合法（2-8字符）</string>
+    <string name="change_image">点击修改头像</string>
+    <!-- 聊天界面 -->
+    <string name="chat_time">%1$s&#160;\"</string>
+    <string name="chat_title">聊&#160;&#160;天</string>
+    <string name="voice_tips">按住说话</string>
+    <string name="voice_tip">松开发送</string>
+    <string name="recorde_short">时间太短</string>
+    <string name="recorde_long">时间太长</string>
+    <string name="msg_fail">发送失败</string>
+    <string name="no_sdcard">手机没有存储卡</string>
+    <string name="server_time_out">连接服务器超时</string>
+    <string name="server_no_data">服务器没有定位数据</string>
+    <string name="chat">微聊</string>
+    <string name="groups">群聊天室</string>
+    <string name="clean">清空</string>
+    <string name="clean_point_1">成功删除了</string>
+    <string name="clean_point_2">条记录</string>
+    <string name="clean_title">提示</string>
+    <string name="clean_message">您将要删除该聊天记录的所有信息吗？</string>
+
+
+
+    <string name="baobei_error1">昵称不能为空</string>
+    <string name="baobei_error2">生日不能为空</string>
+    <string name="baobei_error3">身高不能为空</string>
+    <string name="baobei_error4">体重不能为空</string>
+    <string name="baobei_error5">手机号码不能为空</string>
+    <string name="baobei_error6">昵称长度合法（2-8字符）</string>
+    <string name="baobei_error7">手机号码不合法</string>
+    <string name="baobei_error8">您没有权限编辑</string>
+
+    <string name="edit_device">编辑当前设备</string>
+    <string name="delete_string">删除</string>
+    <string name="edit_string">编辑</string>
+    <string name="sleep_string">睡眠提醒</string>
+    <string name="long_click_unbond">(长按解绑宝贝)</string>
+    <string name="moday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+
+    <string name="messtext0">取消分享</string>
+    <string name="messtext1">向您分享</string>
+    <string name="messtext2">进入围栏</string>
+    <string name="messtext3">出围栏</string>
+    <string name="messtext4">异常关机</string>
+    <string name="messtext5">手动关机</string>
+    <string name="messtext6">低电压关机</string>
+    <string name="messtext7">开机登陆</string>
+    <string name="low_string">低电量</string>
+    <string name="locate">Location</string>
+    <string name="detail">Detail</string>
+    <string name="distance_onetime">distance</string>
+    <string name="step_onetime">step</string>
+    <string name="burn_onetime">burn</string>
+    <string name="distance_run">run distance</string>
+    <string name="time_run">run time</string>
+    <string name="burn_run">run burn</string>
+    <string name="distance_walk">walk distance</string>
+    <string name="time_walk">walk time</string>
+    <string name="burn_walk">walk burn</string>
+    <string name="trajectory">Trajectory</string>
+    <string name="title_sleep">Sleep Time</string>
+    <string name="device_manage">Device Manage</string>
+    <string name="relative_num">Relative Number</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_pre_layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:ignore="UseCompoundDrawables" >
+
+    <ImageButton
+        android:id="@+id/item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:paddingLeft="50dip"
+        android:paddingTop="40dip"
+        android:paddingRight="50dip"
+        android:paddingBottom="36dip"
+        android:src="@drawable/watch_disconnected"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/item_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="185dip"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:text="@string/add_watch_hint"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="190dip"
+        android:singleLine="true"
+        android:focusable="false"
+        android:paddingTop="90dip"
+        android:text="@string/str_mtksmartdevice"
+        android:textIsSelectable="false"
+        android:textSize="12dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/connect_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dip"
+        android:focusable="false"
+        android:paddingTop="110dip"
+        android:text="@string/str_mtksmartwatch"
+        android:textIsSelectable="false"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/ringing_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dip"
+        android:focusable="false"
+        android:paddingTop="125dip"
+        android:text="@string/main_menu_ringing"
+        android:textColor="@color/blue"
+        android:textIsSelectable="false"
+        android:textSize="8dip"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_public" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:gravity="bottom|center"
+            android:visibility="gone" >
+
+            <care.widget.CircularImage
+                android:id="@+id/device_img"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:src="@drawable/device_head_normal"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:background="#656555"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="15dip" >
+
+                <TextView
+                    android:id="@+id/device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名字"
+                    android:textColor="@color/qinqing_text2_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/device_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="电话号码:"
+                    android:textColor="@color/qinqing_text1_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="25dip"
+            android:background="@color/color_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_text1"
+                android:textColor="@color/qinqing_text2_color"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/operation_qinqing_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:hint="@string/operation_hint1"
+                android:textColor="@color/qinqing_text2_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="4dip"
+            android:background="@color/color_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_text2"
+                android:textColor="@color/qinqing_text2_color"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/operation_qinqing_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:hint="@string/operation_hint2"
+                android:textColor="@color/qinqing_text2_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="4dip"
+            android:background="@color/color_gray" />
+
+        <Button
+            android:id="@+id/add_number_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="60dip"
+            android:background="@drawable/qinqing_button_bg"
+            android:text="@string/operation_button_text1"
+            android:textColor="#ffffffff"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/mof_button"
+            style="@style/style_button"
+            android:layout_marginTop="60dip"
+            android:text="@string/operation_button_text2"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/delete_button"
+            style="@style/style_button"
+            android:layout_marginTop="15dip"
+            android:text="@string/operation_button_text3"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        layout="@layout/progress_bar"
+        android:visibility="gone" />
+
+</RelativeLayout>
+

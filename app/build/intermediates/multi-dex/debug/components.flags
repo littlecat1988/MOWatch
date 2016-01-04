@@ -1,0 +1,346 @@
+-injars 'D:\project_studio\MOWatch\app\build\intermediates\multi-dex\debug\allclasses.jar'
+-outjars 'D:\project_studio\MOWatch\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'E:\android studio\android sdk\build-tools\android-6.0\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'D:\project_studio\MOWatch\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.mtk.main.BTNotificationApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class care.WelcomeActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.FirstActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.SportActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.HistorySportActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.SleepActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.DetailInfo {
+    <init>();
+}
+
+-keep class com.mtk.main.DeviceInfoActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.SleepDetailInfo {
+    <init>();
+}
+
+-keep class com.mtk.main.LocationPage {
+    <init>();
+}
+
+-keep class com.mtk.main.SyncDataActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.UVActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.DownloadData {
+    <init>();
+}
+
+-keep class com.mtk.main.HRActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.PIActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.MainActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.yahooweather.CitySearchActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.yahooweather.YWSettingActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.remotecamera.RemoteCamera {
+    <init>();
+}
+
+-keep class com.mtk.app.applist.ApplistActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.applist.AppAuthActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.AboutActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.notification.NotificationAppListActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.MainService {
+    <init>();
+}
+
+-keep class com.mediatek.camera.service.MtkCameraAPService {
+    <init>();
+}
+
+-keep class com.mtk.app.notification.NotificationReceiver {
+    <init>();
+}
+
+-keep class com.mtk.main.BootReceiver {
+    <init>();
+}
+
+-keep class com.mtk.app.notification.NotificationReceiver18 {
+    <init>();
+}
+
+-keep class com.mtk.main.DeviceScanActivity {
+    <init>();
+}
+
+-keep class com.mtk.main.LogDeviceScanActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.fota.SmartDeviceFirmware {
+    <init>();
+}
+
+-keep class com.mtk.app.fota.UpdateFirmwareActivity {
+    <init>();
+}
+
+-keep class com.redbend.client.ClientService {
+    <init>();
+}
+
+-keep class com.redbend.client.BasicService {
+    <init>();
+}
+
+-keep class com.mtk.app.appstore.AppStoreActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.appstore.AppDetailActivity {
+    <init>();
+}
+
+-keep class com.mtk.bluetoothle.FitnessActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.appstore.AppStoreReceiver {
+    <init>();
+}
+
+-keep class com.mtk.bluetoothle.AlertSettingPreference {
+    <init>();
+}
+
+-keep class com.mtk.bluetoothle.PxpStatusChangeReceiver {
+    <init>();
+}
+
+-keep class com.mtk.bluetoothle.PxpAlertDialogService {
+    <init>();
+}
+
+-keep class com.mtk.app.sos.OneKeySOSActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.sos.MultiKeySOSActivity {
+    <init>();
+}
+
+-keep class com.mtk.app.sos.SOSEditActivity {
+    <init>();
+}
+
+-keep class com.mtk.ipc.IPCControllerService {
+    <init>();
+}
+
+-keep class care.SettingActivity {
+    <init>();
+}
+
+-keep class care.FeedBackActivity {
+    <init>();
+}
+
+-keep class care.LoginActivity {
+    <init>();
+}
+
+-keep class care.RegisterActivity {
+    <init>();
+}
+
+-keep class care.BondDeviceActivity {
+    <init>();
+}
+
+-keep class care.CaptureActivity {
+    <init>();
+}
+
+-keep class care.PersonInfoActivity {
+    <init>();
+}
+
+-keep class care.BaoBeiInfoActivity {
+    <init>();
+}
+
+-keep class care.AddBaoBeiInfoActivity {
+    <init>();
+}
+
+-keep class care.QinQingActivity {
+    <init>();
+}
+
+-keep class care.BaoBeiManagerActivity {
+    <init>();
+}
+
+-keep class care.FenceActivity {
+    <init>();
+}
+
+-keep class care.LocationActivity {
+    <init>();
+}
+
+-keep class care.LocusActivity {
+    <init>();
+}
+
+-keep class care.FenceAddActivity {
+    <init>();
+}
+
+-keep class care.ActivityShareDevice {
+    <init>();
+}
+
+-keep class care.ActivityInvitePeople {
+    <init>();
+}
+
+-keep class care.ActivityBabyControl {
+    <init>();
+}
+
+-keep class care.Mess_Attention_Activity {
+    <init>();
+}
+
+-keep class care.OperationQinQingActivity {
+    <init>();
+}
+
+-keep class care.SingleChatActivity {
+    <init>();
+}
+
+-keep class care.RemainActivity {
+    <init>();
+}
+
+-keep class care.RemainClockActivity {
+    <init>();
+}
+
+-keep class care.BaobeiInfo_chose_Activity {
+    <init>();
+}
+
+-keep class care.DisturbActivity {
+    <init>();
+}
+
+-keep class care.ChatActivity {
+    <init>();
+}
+
+-keep class care.broadcast.NetReceive {
+    <init>();
+}
+
+-keep class care.broadcast.MessageReceive {
+    <init>();
+}
+
+-keep class care.broadcast.RePeatReceive {
+    <init>();
+}
+
+-keep class care.broadcast.DownApkEndReceive {
+    <init>();
+}
+
+-keep class care.service.MessageService {
+    <init>();
+}
+
+-keep class care.service.BackHttpService {
+    <init>();
+}
+
+-keep class com.tencent.android.tpush.XGPushActivity {
+    <init>();
+}
+
+-keep class com.tencent.android.tpush.XGPushReceiver {
+    <init>();
+}
+
+-keep class com.tencent.android.tpush.service.XGPushService {
+    <init>();
+}
+
+-keep class com.tencent.android.tpush.rpc.XGRemoteService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

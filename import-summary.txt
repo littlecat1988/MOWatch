@@ -1,0 +1,538 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* 120.png
+* Android.mk
+* app\
+* app\build.gradle
+* app\libs\
+* app\libs\AchartEngine.jar
+* app\libs\FotaVdmLib.jar
+* app\libs\MREPermission.jar
+* app\libs\commons-codec-1.5.jar
+* app\libs\google-play-services.jar
+* app\libs\signpost-commonshttp4-1.2.1.1.jar
+* app\libs\signpost-core-1.2.1.1.jar
+* app\libs\wearable.jar
+* app\proguard-project.txt
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\aidl\
+* app\src\main\aidl\com\
+* app\src\main\aidl\com\mtk\
+* app\src\main\aidl\com\mtk\ipc\
+* app\src\main\aidl\com\mtk\ipc\IControllerCallback.aidl
+* app\src\main\aidl\com\mtk\ipc\IControllerInterface.aidl
+* app\src\main\assets\
+* app\src\main\assets\BleProfilesDef.xml
+* app\src\main\assets\music\
+* app\src\main\assets\music\Alarm_Beep_03.ogg
+* app\src\main\assets\services\
+* app\src\main\assets\services\AlertNotificationService.xml
+* app\src\main\assets\services\CurrentTimeService.xml
+* app\src\main\assets\services\ImmediateAlertService.xml
+* app\src\main\assets\services\NextDSTChangeService.xml
+* app\src\main\assets\services\PhoneAlertStateService.xml
+* app\src\main\assets\services\ReferenceTimeUpdateService.xml
+* app\src\main\assets\services\ServiceTemplate.xml
+* app\src\main\java\
+* app\src\main\java\com\
+* app\src\main\java\com\gomtel\
+* app\src\main\java\com\gomtel\app\
+* app\src\main\java\com\gomtel\app\uv\
+* app\src\main\java\com\gomtel\app\uv\UVController.java
+* app\src\main\java\com\gomtel\database\
+* app\src\main\java\com\gomtel\database\DatabaseAdapter.java
+* app\src\main\java\com\gomtel\database\DatabaseOpenHelper.java
+* app\src\main\java\com\gomtel\database\DatabaseProvider.java
+* app\src\main\java\com\gomtel\util\
+* app\src\main\java\com\gomtel\util\CalendarHelper.java
+* app\src\main\java\com\gomtel\util\CircleImageView.java
+* app\src\main\java\com\gomtel\util\DialogHelper.java
+* app\src\main\java\com\gomtel\util\Global.java
+* app\src\main\java\com\gomtel\util\GoalProgressbar.java
+* app\src\main\java\com\gomtel\util\HistoryDay.java
+* app\src\main\java\com\gomtel\util\HomeChart.java
+* app\src\main\java\com\gomtel\util\HrInfo.java
+* app\src\main\java\com\gomtel\util\HttpParamsKey.java
+* app\src\main\java\com\gomtel\util\HttpUtils.java
+* app\src\main\java\com\gomtel\util\LocationUtils.java
+* app\src\main\java\com\gomtel\util\MyBarChart.java
+* app\src\main\java\com\gomtel\util\MyCircleImageView.java
+* app\src\main\java\com\gomtel\util\MyPieChart.java
+* app\src\main\java\com\gomtel\util\ParseXmlService.java
+* app\src\main\java\com\gomtel\util\SleepDay.java
+* app\src\main\java\com\gomtel\util\SleepInfo.java
+* app\src\main\java\com\gomtel\util\SportInfo.java
+* app\src\main\java\com\gomtel\util\UpdateManager.java
+* app\src\main\java\com\gomtel\util\UserInfo.java
+* app\src\main\java\com\gomtel\util\WeatherInfo.java
+* app\src\main\java\com\gomtel\util\package-info.java
+* app\src\main\java\com\gomtel\widget\
+* app\src\main\java\com\gomtel\widget\ItemsRange.java
+* app\src\main\java\com\gomtel\widget\OnWheelChangedListener.java
+* app\src\main\java\com\gomtel\widget\OnWheelClickedListener.java
+* app\src\main\java\com\gomtel\widget\OnWheelScrollListener.java
+* app\src\main\java\com\gomtel\widget\WheelAdapter.java
+* app\src\main\java\com\gomtel\widget\WheelRecycle.java
+* app\src\main\java\com\gomtel\widget\WheelScroller.java
+* app\src\main\java\com\gomtel\widget\WheelView.java
+* app\src\main\java\com\gomtel\widget\adapters\
+* app\src\main\java\com\gomtel\widget\adapters\AbstractWheelAdapter.java
+* app\src\main\java\com\gomtel\widget\adapters\AbstractWheelTextAdapter.java
+* app\src\main\java\com\gomtel\widget\adapters\AdapterWheel.java
+* app\src\main\java\com\gomtel\widget\adapters\ArrayWheelAdapter.java
+* app\src\main\java\com\gomtel\widget\adapters\NumericWheelAdapter.java
+* app\src\main\java\com\gomtel\widget\adapters\WheelViewAdapter.java
+* app\src\main\java\com\mtk\
+* app\src\main\java\com\mtk\app\
+* app\src\main\java\com\mtk\app\applist\
+* app\src\main\java\com\mtk\app\applist\AppAuthActivity.java
+* app\src\main\java\com\mtk\app\applist\AppInfo.java
+* app\src\main\java\com\mtk\app\applist\AppManager.java
+* app\src\main\java\com\mtk\app\applist\ApplistActivity.java
+* app\src\main\java\com\mtk\app\appstore\
+* app\src\main\java\com\mtk\app\appstore\AppDetailActivity.java
+* app\src\main\java\com\mtk\app\appstore\AppResourceManager.java
+* app\src\main\java\com\mtk\app\appstore\AppStoreActivity.java
+* app\src\main\java\com\mtk\app\appstore\AppStoreManager.java
+* app\src\main\java\com\mtk\app\appstore\AppStoreReceiver.java
+* app\src\main\java\com\mtk\app\appstore\DownloadManager.java
+* app\src\main\java\com\mtk\app\appstore\FileUtils.java
+* app\src\main\java\com\mtk\app\appstore\HttpHelper.java
+* app\src\main\java\com\mtk\app\appstore\InstallManager.java
+* app\src\main\java\com\mtk\app\appstore\RemoteAppInfo.java
+* app\src\main\java\com\mtk\app\appstore\XMLParser.java
+* app\src\main\java\com\mtk\app\fota\
+* app\src\main\java\com\mtk\app\fota\CheckNewVersionButtonPreference.java
+* app\src\main\java\com\mtk\app\fota\FotaUtils.java
+* app\src\main\java\com\mtk\app\fota\HttpHelper.java
+* app\src\main\java\com\mtk\app\fota\NewVersionChecker.java
+* app\src\main\java\com\mtk\app\fota\SmartDeviceFirmware.java
+* app\src\main\java\com\mtk\app\fota\UpdateFirmwareActivity.java
+* app\src\main\java\com\mtk\app\notification\
+* app\src\main\java\com\mtk\app\notification\AppList.java
+* app\src\main\java\com\mtk\app\notification\BlockList.java
+* app\src\main\java\com\mtk\app\notification\CallService.java
+* app\src\main\java\com\mtk\app\notification\IgnoreList.java
+* app\src\main\java\com\mtk\app\notification\NotificationAppListActivity.java
+* app\src\main\java\com\mtk\app\notification\NotificationDataManager.java
+* app\src\main\java\com\mtk\app\notification\NotificationReceiver.java
+* app\src\main\java\com\mtk\app\notification\NotificationReceiver18.java
+* app\src\main\java\com\mtk\app\notification\NotificationService.java
+* app\src\main\java\com\mtk\app\notification\NotificationSyncList.java
+* app\src\main\java\com\mtk\app\notification\SmsService.java
+* app\src\main\java\com\mtk\app\notification\SystemNotificationService.java
+* app\src\main\java\com\mtk\app\remotecamera\
+* app\src\main\java\com\mtk\app\remotecamera\RemoteCamera.java
+* app\src\main\java\com\mtk\app\remotecamera\RemoteCameraService.java
+* app\src\main\java\com\mtk\app\sos\
+* app\src\main\java\com\mtk\app\sos\MultiKeySOSActivity.java
+* app\src\main\java\com\mtk\app\sos\OneKeySOSActivity.java
+* app\src\main\java\com\mtk\app\sos\SOSEditActivity.java
+* app\src\main\java\com\mtk\app\thirdparty\
+* app\src\main\java\com\mtk\app\thirdparty\EXCDController.java
+* app\src\main\java\com\mtk\app\thirdparty\MREEController.java
+* app\src\main\java\com\mtk\app\yahooweather\
+* app\src\main\java\com\mtk\app\yahooweather\CityAdapter.java
+* app\src\main\java\com\mtk\app\yahooweather\CitySearchActivity.java
+* app\src\main\java\com\mtk\app\yahooweather\YWSettingActivity.java
+* app\src\main\java\com\mtk\bluetoothle\
+* app\src\main\java\com\mtk\bluetoothle\AlertSettingPreference.java
+* app\src\main\java\com\mtk\bluetoothle\AlertSettingReadWriter.java
+* app\src\main\java\com\mtk\bluetoothle\CustomizedBleClient.java
+* app\src\main\java\com\mtk\bluetoothle\CustomizedBleFeaturesIniter.java
+* app\src\main\java\com\mtk\bluetoothle\FitnessActivity.java
+* app\src\main\java\com\mtk\bluetoothle\FitnessHelper.java
+* app\src\main\java\com\mtk\bluetoothle\FitnessUIInterface.java
+* app\src\main\java\com\mtk\bluetoothle\HistoryHour.java
+* app\src\main\java\com\mtk\bluetoothle\LeProfileUtils.java
+* app\src\main\java\com\mtk\bluetoothle\LocalPxpFmpController.java
+* app\src\main\java\com\mtk\bluetoothle\PxpAlertDialogService.java
+* app\src\main\java\com\mtk\bluetoothle\PxpStatusChangeReceiver.java
+* app\src\main\java\com\mtk\bluetoothle\UvBleClient.java
+* app\src\main\java\com\mtk\custom\
+* app\src\main\java\com\mtk\custom\package-info.java
+* app\src\main\java\com\mtk\ipc\
+* app\src\main\java\com\mtk\ipc\IPCControllerEx.java
+* app\src\main\java\com\mtk\ipc\IPCControllerFactory.java
+* app\src\main\java\com\mtk\ipc\IPCControllerService.java
+* app\src\main\java\com\mtk\main\
+* app\src\main\java\com\mtk\main\AboutActivity.java
+* app\src\main\java\com\mtk\main\BTNotificationApplication.java
+* app\src\main\java\com\mtk\main\BootReceiver.java
+* app\src\main\java\com\mtk\main\CustomPreference.java
+* app\src\main\java\com\mtk\main\DeviceScanActivity.java
+* app\src\main\java\com\mtk\main\DownloadData.java
+* app\src\main\java\com\mtk\main\FindMePreference.java
+* app\src\main\java\com\mtk\main\FirstActivity.java
+* app\src\main\java\com\mtk\main\HRActivity.java
+* app\src\main\java\com\mtk\main\HistorySportActivity.java
+* app\src\main\java\com\mtk\main\LogDeviceScanActivity.java
+* app\src\main\java\com\mtk\main\MainActivity.java
+* app\src\main\java\com\mtk\main\MainService.java
+* app\src\main\java\com\mtk\main\PIActivity.java
+* app\src\main\java\com\mtk\main\PreferenceData.java
+* app\src\main\java\com\mtk\main\PxpAlertSwitchPreference.java
+* app\src\main\java\com\mtk\main\ReadHttpGet.java
+* app\src\main\java\com\mtk\main\SleepActivity.java
+* app\src\main\java\com\mtk\main\SportActivity.java
+* app\src\main\java\com\mtk\main\SyncDataActivity.java
+* app\src\main\java\com\mtk\main\UVActivity.java
+* app\src\main\java\com\mtk\main\UploadData.java
+* app\src\main\java\com\mtk\main\Utils.java
+* app\src\main\jniLibs\
+* app\src\main\jniLibs\armeabi\
+* app\src\main\jniLibs\armeabi\libCommand.so
+* app\src\main\jniLibs\armeabi\libsmm.so
+* app\src\main\res\
+* app\src\main\res\anim\
+* app\src\main\res\anim\hr_anim.xml
+* app\src\main\res\drawable-hdpi\
+* app\src\main\res\drawable-hdpi\Thumbs.db
+* app\src\main\res\drawable-hdpi\appstore.png
+* app\src\main\res\drawable-hdpi\bt_fota_update.bmp
+* app\src\main\res\drawable-hdpi\bt_install.png
+* app\src\main\res\drawable-hdpi\bt_uninstall.png
+* app\src\main\res\drawable-hdpi\btn_cancel_normal.png
+* app\src\main\res\drawable-hdpi\btn_cancel_press.png
+* app\src\main\res\drawable-hdpi\btn_ok_normal.png
+* app\src\main\res\drawable-hdpi\btn_ok_press.png
+* app\src\main\res\drawable-hdpi\call_service.png
+* app\src\main\res\drawable-hdpi\ic_app_info.png
+* app\src\main\res\drawable-hdpi\ic_battery_status_0.png
+* app\src\main\res\drawable-hdpi\ic_battery_status_100.png
+* app\src\main\res\drawable-hdpi\ic_battery_status_33.png
+* app\src\main\res\drawable-hdpi\ic_battery_status_66.png
+* app\src\main\res\drawable-hdpi\ic_cab_done_holo_light.png
+* app\src\main\res\drawable-hdpi\ic_close_btn.png
+* app\src\main\res\drawable-hdpi\ic_connected_status.png
+* app\src\main\res\drawable-hdpi\ic_launcher.png
+* app\src\main\res\drawable-hdpi\ic_settings.png
+* app\src\main\res\drawable-hdpi\message_service.png
+* app\src\main\res\drawable-hdpi\notification.png
+* app\src\main\res\drawable-hdpi\setting_icon1.png
+* app\src\main\res\drawable-hdpi\smart_watch.png
+* app\src\main\res\drawable-hdpi\watch_add.png
+* app\src\main\res\drawable-hdpi\watch_connected.png
+* app\src\main\res\drawable-hdpi\watch_disconnected.png
+* app\src\main\res\drawable-ldpi\
+* app\src\main\res\drawable-ldpi\Thumbs.db
+* app\src\main\res\drawable-ldpi\ic_app_info.png
+* app\src\main\res\drawable-ldpi\ic_battery_status_0.png
+* app\src\main\res\drawable-ldpi\ic_battery_status_100.png
+* app\src\main\res\drawable-ldpi\ic_battery_status_33.png
+* app\src\main\res\drawable-ldpi\ic_battery_status_66.png
+* app\src\main\res\drawable-ldpi\ic_connected_status.png
+* app\src\main\res\drawable-mdpi\
+* app\src\main\res\drawable-mdpi\Thumbs.db
+* app\src\main\res\drawable-mdpi\appstore.png
+* app\src\main\res\drawable-mdpi\bt_install.png
+* app\src\main\res\drawable-mdpi\bt_uninstall.png
+* app\src\main\res\drawable-mdpi\heartrate.png
+* app\src\main\res\drawable-mdpi\ic_app_info.png
+* app\src\main\res\drawable-mdpi\ic_battery_status_0.png
+* app\src\main\res\drawable-mdpi\ic_battery_status_100.png
+* app\src\main\res\drawable-mdpi\ic_battery_status_33.png
+* app\src\main\res\drawable-mdpi\ic_battery_status_66.png
+* app\src\main\res\drawable-mdpi\ic_cab_done_holo_light.png
+* app\src\main\res\drawable-mdpi\ic_close_btn.png
+* app\src\main\res\drawable-mdpi\ic_connected_status.png
+* app\src\main\res\drawable-mdpi\ic_settings.png
+* app\src\main\res\drawable-mdpi\sleep.png
+* app\src\main\res\drawable-mdpi\sport.png
+* app\src\main\res\drawable-mdpi\watch_add.png
+* app\src\main\res\drawable-mdpi\watch_connected.png
+* app\src\main\res\drawable-mdpi\watch_disconnected.png
+* app\src\main\res\drawable-xhdpi\
+* app\src\main\res\drawable-xhdpi\Thumbs.db
+* app\src\main\res\drawable-xhdpi\appstore.png
+* app\src\main\res\drawable-xhdpi\bg1_ui.xml
+* app\src\main\res\drawable-xhdpi\bg2_ui.xml
+* app\src\main\res\drawable-xhdpi\bg3_ui.xml
+* app\src\main\res\drawable-xhdpi\bg4_ui.xml
+* app\src\main\res\drawable-xhdpi\bg5_ui.xml
+* app\src\main\res\drawable-xhdpi\bg6_ui.xml
+* app\src\main\res\drawable-xhdpi\bg7_ui.xml
+* app\src\main\res\drawable-xhdpi\bg8_ui.xml
+* app\src\main\res\drawable-xhdpi\bg9_ui.xml
+* app\src\main\res\drawable-xhdpi\bg_hr.png
+* app\src\main\res\drawable-xhdpi\bg_personinfo.png
+* app\src\main\res\drawable-xhdpi\bg_title.png
+* app\src\main\res\drawable-xhdpi\bg_ui.xml
+* app\src\main\res\drawable-xhdpi\bluetooth.png
+* app\src\main\res\drawable-xhdpi\bluetooth_without.png
+* app\src\main\res\drawable-xhdpi\bt_install.png
+* app\src\main\res\drawable-xhdpi\bt_uninstall.png
+* app\src\main\res\drawable-xhdpi\btn_cancel_normal.png
+* app\src\main\res\drawable-xhdpi\btn_cancel_press.png
+* app\src\main\res\drawable-xhdpi\btn_ok_normal.png
+* app\src\main\res\drawable-xhdpi\btn_ok_press.png
+* app\src\main\res\drawable-xhdpi\heartrate.png
+* app\src\main\res\drawable-xhdpi\ic_app_info.png
+* app\src\main\res\drawable-xhdpi\ic_battery_status_0.png
+* app\src\main\res\drawable-xhdpi\ic_battery_status_100.png
+* app\src\main\res\drawable-xhdpi\ic_battery_status_33.png
+* app\src\main\res\drawable-xhdpi\ic_battery_status_66.png
+* app\src\main\res\drawable-xhdpi\ic_cab_done_holo_light.png
+* app\src\main\res\drawable-xhdpi\ic_close_btn.png
+* app\src\main\res\drawable-xhdpi\ic_connected_status.png
+* app\src\main\res\drawable-xhdpi\ic_settings.png
+* app\src\main\res\drawable-xhdpi\icon_binding.png
+* app\src\main\res\drawable-xhdpi\icon_circle.png
+* app\src\main\res\drawable-xhdpi\icon_hr.png
+* app\src\main\res\drawable-xhdpi\icon_radar.png
+* app\src\main\res\drawable-xhdpi\icon_sleep.png
+* app\src\main\res\drawable-xhdpi\icon_sports.png
+* app\src\main\res\drawable-xhdpi\icon_temp.png
+* app\src\main\res\drawable-xhdpi\icon_ultraviolet_ray.png
+* app\src\main\res\drawable-xhdpi\line.png
+* app\src\main\res\drawable-xhdpi\line_personinfo.png
+* app\src\main\res\drawable-xhdpi\portrait.png
+* app\src\main\res\drawable-xhdpi\setting_ble.png
+* app\src\main\res\drawable-xhdpi\settings_cloud_line.png
+* app\src\main\res\drawable-xhdpi\take_picture_btlinker.png
+* app\src\main\res\drawable-xhdpi\uv_00.png
+* app\src\main\res\drawable-xhdpi\uv_01.png
+* app\src\main\res\drawable-xhdpi\uv_011.png
+* app\src\main\res\drawable-xhdpi\uv_02.png
+* app\src\main\res\drawable-xhdpi\uv_03.png
+* app\src\main\res\drawable-xhdpi\uv_04.png
+* app\src\main\res\drawable-xhdpi\uv_05.png
+* app\src\main\res\drawable-xhdpi\uv_06.png
+* app\src\main\res\drawable-xhdpi\uv_07.png
+* app\src\main\res\drawable-xhdpi\uv_08.png
+* app\src\main\res\drawable-xhdpi\uv_09.png
+* app\src\main\res\drawable-xhdpi\uv_10.png
+* app\src\main\res\drawable-xhdpi\uv_11.png
+* app\src\main\res\drawable-xhdpi\watch_add.png
+* app\src\main\res\drawable-xhdpi\watch_connected.png
+* app\src\main\res\drawable-xhdpi\watch_disconnected.png
+* app\src\main\res\drawable-xhdpi\wave_button_bg.png
+* app\src\main\res\drawable-xxhdpi\
+* app\src\main\res\drawable-xxhdpi\Thumbs.db
+* app\src\main\res\drawable-xxhdpi\appstore.png
+* app\src\main\res\drawable-xxhdpi\bt_install.png
+* app\src\main\res\drawable-xxhdpi\bt_uninstall.png
+* app\src\main\res\drawable-xxhdpi\ic_app_info.png
+* app\src\main\res\drawable-xxhdpi\ic_battery_status_0.png
+* app\src\main\res\drawable-xxhdpi\ic_battery_status_100.png
+* app\src\main\res\drawable-xxhdpi\ic_battery_status_33.png
+* app\src\main\res\drawable-xxhdpi\ic_battery_status_66.png
+* app\src\main\res\drawable-xxhdpi\ic_cab_done_holo_light.png
+* app\src\main\res\drawable-xxhdpi\ic_close_btn.png
+* app\src\main\res\drawable-xxhdpi\ic_connected_status.png
+* app\src\main\res\drawable-xxhdpi\ic_settings.png
+* app\src\main\res\drawable-xxhdpi\watch_add.png
+* app\src\main\res\drawable-xxhdpi\watch_connected.png
+* app\src\main\res\drawable-xxhdpi\watch_disconnected.png
+* app\src\main\res\drawable\
+* app\src\main\res\drawable\Thumbs.db
+* app\src\main\res\drawable\bg_pop.xml
+* app\src\main\res\drawable\bg_ui_add_by_sugar.xml
+* app\src\main\res\drawable\bg_ui_button.xml
+* app\src\main\res\drawable\bt_store_downloading.9.png
+* app\src\main\res\drawable\bt_store_install.9.png
+* app\src\main\res\drawable\bt_store_uninstall.9.png
+* app\src\main\res\drawable\bt_store_update.9.png
+* app\src\main\res\drawable\btn_cancel_bg.xml
+* app\src\main\res\drawable\btn_ok_bg.xml
+* app\src\main\res\drawable\default_sample.png
+* app\src\main\res\drawable\layout_bg.xml
+* app\src\main\res\drawable\line.png
+* app\src\main\res\drawable\textview_border.xml
+* app\src\main\res\drawable\wheel_bg.xml
+* app\src\main\res\drawable\wheel_val.xml
+* app\src\main\res\layout\
+* app\src\main\res\layout\about.xml
+* app\src\main\res\layout\actionbar_indeterminate_progress.xml
+* app\src\main\res\layout\activity_main.xml
+* app\src\main\res\layout\activity_report.xml
+* app\src\main\res\layout\alert_dialog_text_view.xml
+* app\src\main\res\layout\appauth_listview.xml
+* app\src\main\res\layout\applistview.xml
+* app\src\main\res\layout\appstore_item_detail.xml
+* app\src\main\res\layout\appstore_listview.xml
+* app\src\main\res\layout\change_name_dialog.xml
+* app\src\main\res\layout\check_new_version_button_pref_layout.xml
+* app\src\main\res\layout\choose_city.xml
+* app\src\main\res\layout\download_data.xml
+* app\src\main\res\layout\find_me_preference_layout.xml
+* app\src\main\res\layout\firmware_download_confirm_dialog_layout.xml
+* app\src\main\res\layout\fitdata_list.xml
+* app\src\main\res\layout\heartrate.xml
+* app\src\main\res\layout\history_sport.xml
+* app\src\main\res\layout\imageview_preference_layout.xml
+* app\src\main\res\layout\layout_birth.xml
+* app\src\main\res\layout\layout_height.xml
+* app\src\main\res\layout\layout_weight.xml
+* app\src\main\res\layout\listitem_device.xml
+* app\src\main\res\layout\login.xml
+* app\src\main\res\layout\main_info_preference_layout.xml
+* app\src\main\res\layout\multikey_sos_listitem.xml
+* app\src\main\res\layout\new_main.xml
+* app\src\main\res\layout\notification_app_list.xml
+* app\src\main\res\layout\onekey_sos_listitem.xml
+* app\src\main\res\layout\package_list_layout.xml
+* app\src\main\res\layout\person_info.xml
+* app\src\main\res\layout\register.xml
+* app\src\main\res\layout\select_blocks_activity_layout.xml
+* app\src\main\res\layout\select_notifi_activity_layout.xml
+* app\src\main\res\layout\sleep.xml
+* app\src\main\res\layout\smartdevicefirmware.xml
+* app\src\main\res\layout\softupdate_progress.xml
+* app\src\main\res\layout\sos_edit_actionbar.xml
+* app\src\main\res\layout\sos_edit_number.xml
+* app\src\main\res\layout\sport.xml
+* app\src\main\res\layout\syncdata.xml
+* app\src\main\res\layout\temperature_set_layout.xml
+* app\src\main\res\layout\text_preference_layout.xml
+* app\src\main\res\layout\tittle_btn_layout.xml
+* app\src\main\res\layout\update_firmware.xml
+* app\src\main\res\layout\uv.xml
+* app\src\main\res\layout\version_download_confirm_dialog_layout.xml
+* app\src\main\res\layout\view_set_portrait.xml
+* app\src\main\res\menu\
+* app\src\main\res\menu\acsetting.xml
+* app\src\main\res\menu\main.xml
+* app\src\main\res\menu\scan.xml
+* app\src\main\res\raw\
+* app\src\main\res\raw\codoon.vxp
+* app\src\main\res\raw\codoon_bmi055.vxp
+* app\src\main\res\raw\codoon_bmi055_driver.vtp
+* app\src\main\res\raw\codoon_driver.vtp
+* app\src\main\res\raw\codoon_icon.png
+* app\src\main\res\raw\codooncfg.xml
+* app\src\main\res\raw\deviceinfo.xml
+* app\src\main\res\raw\digitclock.vxp
+* app\src\main\res\raw\digitclock_pic.png
+* app\src\main\res\raw\digitclockcfg.xml
+* app\src\main\res\raw\driver.vtd
+* app\src\main\res\raw\yahoo.png
+* app\src\main\res\raw\yahooweather.vxp
+* app\src\main\res\raw\yahooweathercfg.xml
+* app\src\main\res\values-hdpi\
+* app\src\main\res\values-hdpi\dimens.xml
+* app\src\main\res\values-w820dp\
+* app\src\main\res\values-w820dp\dimens.xml
+* app\src\main\res\values-xhdpi\
+* app\src\main\res\values-xhdpi\dimens.xml
+* app\src\main\res\values-xxhdpi\
+* app\src\main\res\values-xxhdpi\dimens.xml
+* app\src\main\res\values-zh-rCN\
+* app\src\main\res\values-zh-rCN\strings.xml
+* app\src\main\res\values\
+* app\src\main\res\values\array.xml
+* app\src\main\res\values\attrs.xml
+* app\src\main\res\values\colors.xml
+* app\src\main\res\values\dimens.xml
+* app\src\main\res\values\integers.xml
+* app\src\main\res\values\strings.xml
+* app\src\main\res\values\styles.xml
+* app\src\main\res\xml\
+* app\src\main\res\xml\accessibility_service_config.xml
+* app\src\main\res\xml\alert_setting_preference.xml
+* app\src\main\res\xml\preferences.xml
+* app\src\main\res\xml\smart_device_firmware_preference.xml
+* app\src\main\res\xml\update_firmware_preference.xml
+* app\src\main\res\xml\wearable_config.xml
+* app\src\main\res\xml\yahooweather_preference.xml
+* build.gradle
+* google-play-services.jar
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* ic_launcher.png
+* ic_launcher_appleWatch.png
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+joda-time-2.3.jar => joda-time:joda-time:2.3
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+joda-time-2.3.jar => version 2.3 in joda-time:joda-time:2.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\AchartEngine.jar => app\libs\AchartEngine.jar
+* libs\armeabi\libCommand.so => app\src\main\jniLibs\armeabi\libCommand.so
+* libs\armeabi\libsmm.so => app\src\main\jniLibs\armeabi\libsmm.so
+* libs\commons-codec-1.5.jar => app\libs\commons-codec-1.5.jar
+* libs\FotaVdmLib.jar => app\libs\FotaVdmLib.jar
+* libs\google-play-services.jar => app\libs\google-play-services.jar
+* libs\MREPermission.jar => app\libs\MREPermission.jar
+* libs\signpost-commonshttp4-1.2.1.1.jar => app\libs\signpost-commonshttp4-1.2.1.1.jar
+* libs\signpost-core-1.2.1.1.jar => app\libs\signpost-core-1.2.1.1.jar
+* libs\wearable.jar => app\libs\wearable.jar
+* proguard-project.txt => app\proguard-project.txt
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\mtk\ipc\IControllerCallback.aidl => app\src\main\aidl\com\mtk\ipc\IControllerCallback.aidl
+* src\com\mtk\ipc\IControllerInterface.aidl => app\src\main\aidl\com\mtk\ipc\IControllerInterface.aidl
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

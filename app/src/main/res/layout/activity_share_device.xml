@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+            android:id="@+id/head_public"
+            layout="@layout/head_public"/>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/head_baby1"
+            />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_vertical"
+        	android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/babyName"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="冬瓜"
+                />
+            <TextView 
+                android:id="@+id/babyPhone"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="号码:13564677685"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/manager_together"
+        />
+	<LinearLayout
+	    android:layout_weight="6"
+	    android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        >
+	    <ListView 
+	        android:id="@+id/manager_list"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        >
+        
+    </ListView>
+	</LinearLayout>
+    
+	
+ 
+    
+</LinearLayout>
+

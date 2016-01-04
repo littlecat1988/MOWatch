@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:orientation="vertical"
+    android:background="@drawable/bg_title">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/heartrate"
+        android:textSize="25sp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dip"
+    android:layout_marginTop="30.0dip"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/status_hr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="" />
+ </LinearLayout>
+"
+
+        <RelativeLayout
+            android:id="@+id/layout_circle"
+            android:layout_width="240.0dip"
+            android:layout_height="240.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/bg_hr" >
+
+            <TextView
+                android:id="@+id/num_hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:lines="1"
+                android:maxWidth="180.0dip"
+                android:text="0"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/num_hr"
+                android:layout_alignBottom="@+id/num_hr"
+                android:layout_toRightOf="@+id/num_hr"
+                android:text="@string/unit_hr" />
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="@string/start" />
+
+            <!--ImageView
+                android:id="@+id/icon_hr"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/icon_hr" /-->
+
+            <TextView
+                android:id="@+id/time_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:visibility="gone"
+                android:text="30" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tips_hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </LinearLayout>
+
+</LinearLayout>

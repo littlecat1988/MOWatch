@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MREPermission">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/main/jniLibs/MREPermission.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

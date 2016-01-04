@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+    <TextView
+            android:id="@+id/sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/sleep"
+            android:textSize="@dimen/person_info_customer_title" />
+
+
+     </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_light_blue"
+    android:gravity="center"
+    android:paddingTop="30dp">
+    <RelativeLayout
+        android:id="@+id/layout_circle"
+        android:layout_width="@dimen/sport_circle_size"
+        android:layout_height="@dimen/sport_circle_size"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/sleep_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="180.0dip"
+            android:text="0"
+            android:textSize="@dimen/sleep_size" />
+
+        <com.gomtel.util.GoalProgressbar
+            android:id="@+id/progress_goal_percent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/title_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sleep_num"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxWidth="180.0dip"
+            android:text="@string/title_sleep"
+            android:textSize="@dimen/title_total_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_below="@+id/sleep_num"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/deep_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deep_sleep"
+                android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/time_sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_sleep"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

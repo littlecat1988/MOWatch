@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/sport"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="@string/history" />
+
+        <TextView
+            android:id="@+id/open_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/history"
+            android:layout_alignBottom="@+id/history"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:text="@string/open_sport" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light_blue"
+        android:gravity="center"
+        android:paddingTop="30dp">
+    <RelativeLayout
+        android:id="@+id/layout_circle"
+        android:layout_width="@dimen/sport_circle_size"
+        android:layout_height="@dimen/sport_circle_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30.0dip" >
+
+        <TextView
+            android:id="@+id/step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="180.0dip"
+            android:text="0"
+            android:textSize="@dimen/step_size" />
+
+        <com.gomtel.util.GoalProgressbar
+            android:id="@+id/progress_goal_percent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/title_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/step"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxWidth="180.0dip"
+            android:text="@string/total_steps"
+            android:textSize="@dimen/title_total_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_below="@+id/step"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxWidth="60.0dip"
+                    android:text="0"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/distance_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxWidth="60.0dip"
+                    android:text="@string/distance_unit"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxWidth="60.0dip"
+                    android:text="0"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/calories_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxWidth="60.0dip"
+                    android:text="@string/calories_unit"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+        </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_sports"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/chart_show24"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_marginTop="@dimen/chart_margin_top"-->
+        <!--android:layout_marginLeft="@dimen/chart_margin_left"-->
+        <!--android:layout_marginRight="@dimen/chart_margin_right"-->
+        <!--android:layout_marginBottom="@dimen/chart_margin_bottom"-->
+        <!--android:orientation="horizontal" >-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

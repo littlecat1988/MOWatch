@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FotaVdmLib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/main/jniLibs/FotaVdmLib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

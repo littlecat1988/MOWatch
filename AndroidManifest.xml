@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mtk.btnotification"
+    android:versionCode="200"
+    android:versionName="V2.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="18" />
+
+    <!-- BTNotifation -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+
+    <!--
+         We will request access to the camera, saying we require a camera
+         of some sort but not one with auto focus capability.
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.redbend.client.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.redbend.permission.EVENT_INTENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
+
+	<permission
+        android:name="com.redbend.permission.EVENT_INTENT"
+        android:protectionLevel="signatureOrSystem" />
+    <permission
+        android:name="com.redbend.client.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.mtk.main.BTNotificationApplication"
+        android:allowBackup="true"
+        android:screenOrientation="portrait"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+<!--  android:theme="@android:style/Theme.Holo.Light.NoActionBar"-->
+        <activity
+            android:name="com.mtk.main.FirstActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+              >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.hotknot.action.MESSAGE_DISCOVERED" />
+
+                <data android:mimeType="application/com.mtk.btnotification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.mtk.main.SportActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.HistorySportActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.SleepActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.SyncDataActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.UVActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.DownloadData"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.main.HRActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.main.PIActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+         <activity
+            android:name="com.mtk.main.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            
+            >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginUsingActivityActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginUsingCustomFragmentActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="LoginActivity" />
+        <activity
+            android:name="com.facebook.LoginUsingLoginFragmentActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.mtk.btnotification.ApplicationsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.facebook.HelloFacebook"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.app.yahooweather.CitySearchActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.app.yahooweather.YWSettingActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Yahoo Weather" >
+        </activity>
+        <activity
+            android:name="com.mtk.btnotify.BTNoticationTest"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="BTNotication Test" >
+        </activity>
+        <activity
+            android:name="com.mtk.app.remotecamera.RemoteCamera"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="Camera Preview"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mtk.btnotify.SettingActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.mtk.btnotify.SelectBlocksAppActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/select_blocks_activity" >
+        </activity>
+        <activity
+            android:name="com.mtk.btnotify.SelectNotifiActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/select_blocks_activity" >
+        </activity>
+        <activity
+            android:name="com.mtk.app.applist.ApplistActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_list">
+        </activity>
+        <activity
+            android:name="com.mtk.app.applist.AppAuthActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name="com.mtk.main.AboutActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/about"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.mtk.app.notification.NotificationAppListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/notifications"
+            android:launchMode="singleTop">
+        </activity>
+
+        <service android:name="com.mtk.main.MainService" />
+        <service android:name="com.mediatek.camera.service.MtkCameraAPService" >
+        </service>
+        <service
+            android:name="com.mtk.app.notification.NotificationReceiver"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" >
+            </meta-data>
+        </service>
+
+        <receiver android:name="com.mtk.main.BootReceiver" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mtk.app.notification.NotificationReceiver18"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="android.deletion.notification" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.mtk.main.DeviceScanActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+        </activity>
+
+        <activity
+            android:name="com.mtk.main.LogUtil.eviceScanActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+        </activity>
+
+       <activity
+            android:name="com.mtk.app.fota.SmartDeviceFirmware"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.mtk.app.fota.UpdateFirmwareActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/app_name">
+        </activity>
+
+        <service android:label="@string/app_name"
+            android:name="com.redbend.client.ClientService"/>
+        
+        <service android:label="@string/app_name"
+            android:name="com.redbend.client.BasicService"/>
+
+        <activity
+            android:name="com.mtk.app.appstore.AppStoreActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_store">
+        </activity>
+        <activity
+            android:name="com.mtk.app.appstore.AppDetailActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name="com.mtk.bluetoothle.FitnessActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <receiver android:name="com.mtk.app.appstore.AppStoreReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <!-- add for BLE UI -->
+        <activity android:name="com.mtk.bluetoothle.AlertSettingPreference"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+        </activity>
+        <receiver android:name="com.mtk.bluetoothle.PxpStatusChangeReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.mediatek.pxpfmp.action.UPDATE_PXP_STATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mtk.bluetoothle.action.DEVICE_NAME_CHANGED_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mtk.bluetoothle.PxpAlertDiaLogUtil.ervice"
+                android:exported="false" >
+        </service>
+
+        <!-- add for SOS call -->
+        <activity
+            android:name="com.mtk.app.sos.OneKeySOSActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/onekey_soscall">
+        </activity>
+
+        <activity
+            android:name="com.mtk.app.sos.MultiKeySOSActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/multikey_soscall">
+        </activity>
+
+        <activity
+            android:name="com.mtk.app.sos.SOSEditActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <!-- Add For IPC Service -->
+        <service
+            android:name="com.mtk.ipc.IPCControllerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mediatek.wearable.aster.ipc.IPCControllerService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

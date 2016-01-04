@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/message_height"
+    android:layout_marginBottom="@dimen/message_mar_top"
+    android:layout_marginTop="50dp"
+    android:background="@color/my_info_bg"
+    android:gravity="center_vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <LinearLayout
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:background="@drawable/image_login_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:padding="2dip"
+            android:gravity="center" >
+
+            <care.widget.CircularImage
+                android:id="@+id/message_bady_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/head" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/message_lin_mar_padin" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/message_bady_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="marry"
+                android:textColor="@color/message_text1_color"
+                android:textSize="@dimen/message_text1_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wristwatch_txt"
+                android:textColor="@color/message_text2_color"
+                android:textSize="@dimen/message_text2_size" />
+
+            <TextView
+                android:id="@+id/message_bady_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150********"
+                android:textColor="@color/message_text2_color"
+                android:textSize="@dimen/message_text2_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/masterfamily_txt"
+                android:textColor="@color/message_text2_color"
+                android:textSize="@dimen/message_text2_size" />
+
+            <TextView
+                android:id="@+id/message_parent_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150********"
+                android:textColor="@color/message_text2_color"
+                android:textSize="@dimen/message_text2_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

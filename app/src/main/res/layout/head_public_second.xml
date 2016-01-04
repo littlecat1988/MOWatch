@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_head_second"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fc9d19"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/public_head1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/public_head_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_left_in" 
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/public_head_text_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CenterT"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendarArea"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center" >
+			<ImageButton
+                android:id="@+id/family_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/bind_button"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+            <ImageButton
+                android:id="@+id/public_head_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/button_calendar"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+            <ImageButton
+                android:id="@+id/bindButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/bind_button"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+            <ImageButton
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/confrim_button"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+            <ImageButton
+                android:id="@+id/fenceAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/bind_button"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+            <ImageButton
+                android:id="@+id/fenceEditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/button_fence_edit"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+             <ImageButton
+                android:id="@+id/account_itme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/bind_button"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+            <ImageButton
+                android:id="@+id/new_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:textSize="@dimen/public_center_text"
+                android:src="@drawable/bind_button"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/button_common_padding"
+                android:visibility="gone"
+                 />
+            
+            <Button
+                android:id="@+id/sms_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/public_text"
+                android:background="#00000000"
+                android:text="update"
+                 android:visibility="gone"
+                 />
+        </LinearLayout>
+     
+    </LinearLayout>
+
+</RelativeLayout>

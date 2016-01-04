@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feedback_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_public" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp" >
+
+            <RadioButton
+                android:id="@+id/tab_rb_a"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/interation_left_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/interation_title1"
+                android:textColor="@drawable/interation_text_bg"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/tab_rb_b"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/interation_center_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/interation_title2"
+                android:textColor="@drawable/interation_text_bg"
+                android:textSize="13sp" />
+
+           
+            <RadioButton
+                android:id="@+id/tab_rb_c"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/interation_right_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/interation_title3"
+                android:textColor="@drawable/interation_text_bg"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="#ffffffff" />
+    </LinearLayout>
+
+</LinearLayout>

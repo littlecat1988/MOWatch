@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:maxLevel="1" android:drawable="@drawable/amp1"/>
+    <item android:maxLevel="3" android:drawable="@drawable/amp2"/>
+    <item android:maxLevel="5" android:drawable="@drawable/amp3"/>
+    <item android:maxLevel="8" android:drawable="@drawable/amp4"/>
+    <item android:maxLevel="11" android:drawable="@drawable/amp5"/>
+</level-list>
+

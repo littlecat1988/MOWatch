@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_list_preference">
+        <item>Pedometer</item>
+        <item>Yahoo</item>
+        <item>Facebook</item>
+    </string-array>
+
+    <!-- Used in app/menu examples -->
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <integer-array name="halos">
+        <item >@drawable/halo_1</item>
+        <item >@drawable/halo_2</item>
+        <item >@drawable/halo_3</item>
+        <item >@drawable/halo_4</item>
+        <item >@drawable/halo_5</item>
+        <item >@drawable/halo_6</item>
+        <item >@drawable/halo_7</item>
+        <item >@drawable/halo_8</item>
+        <item >@drawable/halo_9</item>
+        <item >@drawable/halo_10</item>
+        <item >@drawable/halo_11</item>
+        <item >@drawable/halo_12</item>
+        <item >@drawable/halo_13</item>
+        <item >@drawable/halo_14</item>
+        <item >@drawable/halo_15</item>
+    </integer-array>
+</resources>

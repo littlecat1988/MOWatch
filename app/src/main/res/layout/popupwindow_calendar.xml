@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_transparent"
+     >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/locus_date_bg"
+            >
+
+            <LinearLayout
+                android:id="@+id/popupwindow_calendar_last_month"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/date_left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" 
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/popupwindow_calendar_month"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupwindow_calendar_next_month"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" 
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/date_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <care.menu.KCalendar
+            android:id="@+id/popupwindow_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="320dp" >
+        </care.menu.KCalendar>
+
+        
+
+        <Button
+            android:id="@+id/popupwindow_calendar_bt_enter"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="完成"
+            android:textColor="#aa564b4b"
+            android:textSize="16sp" 
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

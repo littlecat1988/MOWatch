@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20.0dip"
+        android:paddingTop="20.0dip"
+        android:text="上传照片"
+        android:textSize="@dimen/text_size_dialog_portrait_title" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@android:color/black"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/text_gallrey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="从相册中选择"
+        android:textSize="@dimen/text_size_dialog_portrait_item" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@android:color/black"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/text_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="拍照"
+        android:textSize="@dimen/text_size_dialog_portrait_item" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/text_cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="取消"
+        android:textSize="@dimen/text_size_dialog_portrait_item" />
+
+</LinearLayout>

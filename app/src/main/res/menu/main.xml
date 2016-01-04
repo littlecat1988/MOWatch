@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+    <group android:id="@+id/menu_items">
+        <!-- <item android:id="@+id/menu_item_firmware_redbend_fota"
+            android:title="@string/fimrware_update_redbend_fota"/>
+        <item android:id="@+id/menu_item_firmware_ubin"
+            android:title="@string/firmware_update_separate_bin"/>
+        <item android:id="@+id/menu_item_firmware_update_usb_otg"
+            android:title="@string/firmware_update_usb_otg"/>
+         <item android:id="@+id/menu_item_firmware_update_usb_file_manager"
+            android:title="@string/firmware_update_usb_otg_file_manager"/> -->
+        <item android:id="@+id/menu_item_smart_device_manager"
+            android:title="@string/menu_item_manager"/>
+    </group>
+
+</menu>

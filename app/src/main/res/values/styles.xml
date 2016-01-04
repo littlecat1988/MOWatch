@@ -1,0 +1,207 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!--<style name="AppBaseTheme" parent="android:Theme.Light">  -->
+    <!--<style name="AppThemeHome" parent="@style/AppBaseThemeHome">-->
+
+    <!--</style>-->
+
+    <!--<style name="AppBaseThemeHome" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; 状态栏和标题栏颜色&ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--&lt;!&ndash; 标题颜色&ndash;&gt;-->
+        <!--<item name="android:textColorPrimary">@android:color/white</item>-->
+        <!--&lt;!&ndash; 溢出菜单图标颜色&ndash;&gt;-->
+        <!--<item name="colorControlNormal">@android:color/white</item>-->
+
+        <!--&lt;!&ndash; 箭头 &ndash;&gt;-->
+        <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+        <!--&lt;!&ndash; 溢出菜单文字颜色&ndash;&gt;-->
+        <!--<item name="textAppearanceLargePopupMenu">@style/OverflowMenuTextAppearance</item>-->
+        <!--&lt;!&ndash; 菜单项点击selector&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>&ndash;&gt;-->
+
+    <!--</style>-->
+    <!--&lt;!&ndash; 左边的箭头指示&ndash;&gt;-->
+    <!--<style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">-->
+        <!--<item name="spinBars">true</item>-->
+        <!--<item name="color">@android:color/white</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash;溢出菜单文字样式&ndash;&gt;-->
+    <!--<style name="OverflowMenuTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large">-->
+        <!--<item name="android:textColor">@android:color/white</item>-->
+    <!--</style>-->
+    <!--<style name="AppBaseTheme" parent="android:Theme.Holo">-->
+        <!--&lt;!&ndash;-->
+            <!--Theme customizations available in newer API levels can go in-->
+            <!--res/values-vXX/styles.xml, while customizations related to-->
+            <!--backward-compatibility can go here.-->
+        <!--&ndash;&gt;-->
+    <!--</style>-->
+<style name="AppTheme.ActionBarStyle" parent="android:Widget.ActionBar">
+        <item name="android:background">@color/customed_yellow</item>
+    </style>
+     <style name="AppTheme" parent="android:Theme.Holo.Light">
+         <item  name="android:windowBackground">@color/customed_yellow</item>
+         <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="SecondTheme.ActionBarStyle" parent="android:Widget.ActionBar">
+        <item name="android:background">@color/customed_second</item>
+    </style>
+     <style name="SecondTheme" parent="android:Theme.Holo.Light.NoActionBar">
+         <item  name="android:windowBackground">@color/customed_second</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+   <!--  <style name="test" parent="android:Theme">  
+		
+		<item name="android:colorForeground">@android:color/bright_foreground_holo_light</item>
+        <item name="android:colorForegroundInverse">@android:color/bright_foreground_inverse_holo_light</item>
+        <item name="android:colorBackground">@android:color/background_holo_light</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+
+        <item name="android:colorPressedHighlight">@color/holo_gray_light</item>
+        <item name="android:colorLongPressedHighlight">@color/holo_gray_bright</item>
+        <item name="android:colorMultiSelectHighlight">@color/holo_green_light</item>
+
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.Light</item>
+        <item name="android:textAppearanceInverse">@android:style/TextAppearance.Holo.Light.Inverse</item>
+
+        <item name="android:textColorPrimary">@android:color/primary_text_holo_light</item>
+        <item name="android:textColorSecondary">@android:color/secondary_text_holo_light</item>
+        <item name="android:textColorTertiary">@android:color/tertiary_text_holo_light</item>
+        <item name="android:textColorPrimaryInverse">@android:color/primary_text_holo_dark</item>
+        <item name="android:textColorSecondaryInverse">@android:color/secondary_text_holo_dark</item>
+        <item name="android:textColorTertiaryInverse">@android:color/tertiary_text_holo_dark</item>
+        <item name="android:textColorPrimaryDisableOnly">@android:color/primary_text_disable_only_holo_light</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@android:color/primary_text_disable_only_holo_dark</item>
+        <item name="android:textColorPrimaryNoDisable">@android:color/primary_text_nodisable_holo_light</item>
+        <item name="android:textColorSecondaryNoDisable">@android:color/secondary_text_nodisable_holo_light</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@android:color/primary_text_nodisable_holo_dark</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@android:color/secondary_text_nodisable_holo_dark</item>
+        <item name="android:textColorHint">@android:color/hint_foreground_holo_light</item>
+        <item name="android:textColorHintInverse">@android:color/hint_foreground_holo_dark</item>
+        <item name="android:textColorHighlight">@android:color/highlighted_text_holo_light</item>
+        <item name="android:textColorHighlightInverse">@android:color/highlighted_text_holo_dark</item>
+        <item name="android:textColorLink">@android:color/holo_blue_light</item>
+        <item name="android:textColorLinkInverse">@android:color/holo_blue_light</item>
+        <item name="android:textColorAlertDialogListItem">@android:color/primary_text_holo_light</item>
+
+        <item name="android:textAppearanceLarge">@android:style/TextAppearance.Holo.Light.Large</item>
+        <item name="android:textAppearanceMedium">@android:style/TextAppearance.Holo.Light.Medium</item>
+        <item name="android:textAppearanceSmall">@android:style/TextAppearance.Holo.Light.Small</item>
+        <item name="android:textAppearanceLargeInverse">@android:style/TextAppearance.Holo.Light.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@android:style/TextAppearance.Holo.Light.Medium.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@android:style/TextAppearance.Holo.Light.Small.Inverse</item>
+        <item name="android:textAppearanceSearchResultTitle">@android:style/TextAppearance.Holo.Light.SearchResult.Title</item>
+        <item name="android:textAppearanceSearchResultSubtitle">@android:style/TextAppearance.Holo.Light.SearchResult.Subtitle</item>
+        
+        <item name="android:textAppearanceButton">@android:style/TextAppearance.Holo.Light.Widget.Button</item>
+
+        <item name="android:editTextColor">?android:attr/textColorPrimary</item>
+        <item name="android:editTextBackground">@android:drawable/edit_text_holo_light</item>
+
+        
+        <item name="android:textCheckMark">@android:drawable/indicator_check_mark_light</item>
+        <item name="android:textCheckMarkInverse">@android:drawable/indicator_check_mark_dark</item>
+
+        <item name="android:textAppearanceLargePopupMenu">@android:style/TextAppearance.Holo.Light.Widget.PopupMenu.Large</item>
+        <item name="android:textAppearanceSmallPopupMenu">@android:style/TextAppearance.Holo.Light.Widget.PopupMenu.Small</item>
+
+        <item name="android:buttonStyle">@android:style/Widget.Holo.Light.Button</item>
+
+        <item name="android:buttonStyleSmall">@android:style/Widget.Holo.Light.Button.Small</item>
+        <item name="android:buttonStyleInset">@android:style/Widget.Holo.Light.Button.Inset</item>
+
+        <item name="android:buttonStyleToggle">@android:style/Widget.Holo.Light.Button.Toggle</item>
+
+
+        <item name="android:listPreferredItemHeight">64dip</item>
+        <item name="android:listPreferredItemHeightSmall">48dip</item>
+        <item name="android:listPreferredItemHeightLarge">80dip</item>
+        <item name="android:textAppearanceListItemSmall">?android:attr/textAppearanceMedium</item>
+        <item name="android:listPreferredItemPaddingLeft">8dip</item>
+        <item name="android:listPreferredItemPaddingRight">8dip</item>
+
+       
+        
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowTitleSize">25dip</item>
+        <item name="android:windowTitleBackgroundStyle">@android:style/WindowTitleBackground.Holo</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Holo.Activity</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustUnspecified</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowActionModeOverlay">false</item>  
+		    
+		
+	</style>-->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppThemeChild" parent="AppBaseTheme">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="left_view_group">
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+    </style>
+    <style name="left_text_view">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="device_info_text_view">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
+
+    <style name="wmtRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/wmt_ratingbar</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+    <style name="DialogTheme">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+		
+</resources>

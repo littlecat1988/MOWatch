@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\project_studio\MOWatch\app\build\intermediates\exploded-aar\com.google.android\multidex\0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f4c9c6bb2a0ce68e48e5d1445eedb1b1040cba78">
+        <dex dex="D:\project_studio\MOWatch\app\build\intermediates\pre-dexed\debug\classes-1a359b8325501535f29f1b2f9889fea8c90e8991.jar" />
+    </item>
+
+</items>

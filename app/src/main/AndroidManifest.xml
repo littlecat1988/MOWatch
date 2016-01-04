@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mtk.btnotification"
+    android:versionCode="1"
+    android:versionName="v1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="18" />
+
+    <!-- BTNotifation -->.
+    <!--add by lixiang for childrenCare 20151104-->
+
+
+    <!-- 短信 权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 向SD卡写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 信鸽权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+
+    <!--
+         We will request access to the camera, saying we require a camera
+         of some sort but not one with auto focus capability.
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.redbend.client.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.redbend.permission.EVENT_INTENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
+
+	<permission
+        android:name="com.redbend.permission.EVENT_INTENT"
+        android:protectionLevel="signatureOrSystem" />
+    <permission
+        android:name="com.redbend.client.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.mtk.main.BTNotificationApplication"
+        android:allowBackup="true"
+        android:screenOrientation="portrait"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+<!--  android:theme="@android:style/Theme.Holo.Light.NoActionBar"-->
+        <!--<activity-->
+        <!--android:name="com.gomtel.safehealth.main.HomePage"-->
+        <!--android:theme="@style/AppThemeHome"-->
+        <!--android:label="@string/app_name" >-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+
+        <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name="care.WelcomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+            <action android:name="com.mediatek.hotknot.action.MESSAGE_DISCOVERED" />
+
+            <data android:mimeType="application/com.mtk.btnotification" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name="com.mtk.main.FirstActivity"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:theme="@android:style/Theme.Holo.Light.NoActionBar"-->
+              <!-->-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="com.mediatek.hotknot.action.MESSAGE_DISCOVERED" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<data android:mimeType="application/com.mtk.btnotification" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<category android:name="android.intent.category.DEFAULT" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+        <!--</activity>-->
+        <activity
+            android:name="com.mtk.main.FirstActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+         <activity
+            android:name="com.mtk.main.SportActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.HistorySportActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.SleepActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.mtk.main.DetailInfo"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.mtk.main.DeviceInfoActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.mtk.main.SleepDetailInfo"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.mtk.main.LocationPage"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.SyncDataActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.UVActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        
+         <activity
+            android:name="com.mtk.main.DownloadData"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.main.HRActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.main.PIActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+         <activity
+            android:name="com.mtk.main.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            
+            >
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.mtk.main.FirstActivity"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:screenOrientation="portrait"-->
+
+            <!-->-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.facebook.LoginUsingActivityActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.facebook.LoginUsingCustomFragmentActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.facebook.LoginActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:label="LoginActivity" />-->
+        <!--<activity-->
+            <!--android:name="com.facebook.LoginUsingLoginFragmentActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.mtk.btnotification.ApplicationsActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.mtk.facebook.HelloFacebook"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.mtk.app.yahooweather.CitySearchActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.mtk.app.yahooweather.YWSettingActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Yahoo Weather" >
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.mtk.btnotify.BTNoticationTest"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:label="BTNotication Test" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.mtk.app.remotecamera.RemoteCamera"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="Camera Preview"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.mtk.btnotify.SettingActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:launchMode="singleTask" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.mtk.btnotify.SelectBlocksAppActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:label="@string/select_blocks_activity" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.mtk.btnotify.SelectNotifiActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+            <!--android:label="@string/select_blocks_activity" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.mtk.app.applist.ApplistActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_list">
+        </activity>
+        <activity
+            android:name="com.mtk.app.applist.AppAuthActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name="com.mtk.main.AboutActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/about"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.mtk.app.notification.NotificationAppListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/notifications"
+            android:launchMode="singleTop">
+        </activity>
+
+        <service android:name="com.mtk.main.MainService" />
+        <service android:name="com.mediatek.camera.service.MtkCameraAPService" >
+        </service>
+        <service
+            android:name="com.mtk.app.notification.NotificationReceiver"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" >
+            </meta-data>
+        </service>
+
+        <receiver android:name="com.mtk.main.BootReceiver" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mtk.app.notification.NotificationReceiver18"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="android.deletion.notification" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.mtk.main.DeviceScanActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+        </activity>
+
+        <activity
+            android:name="com.mtk.main.LogDeviceScanActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+        </activity>
+
+       <activity
+            android:name="com.mtk.app.fota.SmartDeviceFirmware"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.mtk.app.fota.UpdateFirmwareActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/app_name">
+        </activity>
+
+        <service android:label="@string/app_name"
+            android:name="com.redbend.client.ClientService"/>
+        
+        <service android:label="@string/app_name"
+            android:name="com.redbend.client.BasicService"/>
+
+        <activity
+            android:name="com.mtk.app.appstore.AppStoreActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_store">
+        </activity>
+        <activity
+            android:name="com.mtk.app.appstore.AppDetailActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name="com.mtk.bluetoothle.FitnessActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <receiver android:name="com.mtk.app.appstore.AppStoreReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <!-- add for BLE UI -->
+        <activity android:name="com.mtk.bluetoothle.AlertSettingPreference"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+        </activity>
+        <receiver android:name="com.mtk.bluetoothle.PxpStatusChangeReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.mediatek.pxpfmp.action.UPDATE_PXP_STATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mtk.bluetoothle.action.DEVICE_NAME_CHANGED_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mtk.bluetoothle.PxpAlertDialogService"
+                android:exported="false" >
+        </service>
+
+        <!-- add for SOS call -->
+        <activity
+            android:name="com.mtk.app.sos.OneKeySOSActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/onekey_soscall">
+        </activity>
+
+        <activity
+            android:name="com.mtk.app.sos.MultiKeySOSActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/multikey_soscall">
+        </activity>
+
+        <activity
+            android:name="com.mtk.app.sos.SOSEditActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <!-- Add For IPC Service -->
+        <service
+            android:name="com.mtk.ipc.IPCControllerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mediatek.wearable.aster.ipc.IPCControllerService"/>
+            </intent-filter>
+        </service>
+
+        <!--add for childcare by lixiang  20151104-->
+        <!--<activity-->
+            <!--android:name="care.WelcomeActivity"-->
+            <!--android:theme="@style/SecondTheme"-->
+            <!--android:screenOrientation="portrait" />-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--<activity-->
+        <!--android:name=".InterationActivity"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+        android:name="care.SettingActivity"
+        android:theme="@style/SecondTheme"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name="care.FeedBackActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.LoginActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.RegisterActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.BondDeviceActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.CaptureActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.PersonInfoActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.BaoBeiInfoActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.AddBaoBeiInfoActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.QinQingActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.BaoBeiManagerActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.FenceActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.LocationActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.LocusActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.FenceAddActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name=".MyActivity"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="care.ActivityShareDevice"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.ActivityInvitePeople"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.ActivityBabyControl"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.Mess_Attention_Activity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.OperationQinQingActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="care.SingleChatActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="care.RemainActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="care.RemainClockActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="care.BaobeiInfo_chose_Activity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="care.DisturbActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="care.ChatActivity"
+            android:theme="@style/SecondTheme"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="care.broadcast.NetReceive">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f6cdd0290b9b4285086510ea809658bb" />
+
+        <meta-data
+            android:name="projectName"
+            android:value="3070"/>
+        <receiver
+            android:name="care.broadcast.MessageReceive"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.care.message.service.INTERFILTER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="care.broadcast.RePeatReceive"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.care.lower" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="care.broadcast.DownApkEndReceive">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="org.care.message.service.GETDOWNLOADURL" />
+            </intent-filter>
+        </receiver>
+        <service android:name="care.service.MessageService" />
+        <service
+            android:name="care.service.BackHttpService"
+            android:exported="false"></service>
+
+        <!-- 信鸽SDK权限配置 -->
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【必须】 exported设置为true -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:exported="true" >
+            <intent-filter>
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action"-->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，其中android:name部分要改为当前包名 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+                <!-- 【必须】 请修改为当前APP名包.PUSH_ACTION，如demo的包名为：com.qq.xgdemo -->
+                <action android:name="org.care.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+        <!-- 【必须】 请修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100152116" />
+        <!-- 【必须】 请修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A362GYIJF46B" />
+    </application>
+
+</manifest>
